@@ -183,8 +183,11 @@ header{max-width:1280px;margin:0 auto;padding:34px 18px 6px;position:relative}
 .chat-head strong{font-size:14px;flex:1}
 .chat-head .x{cursor:pointer;color:var(--ink-dim);font-size:18px;padding:4px 8px;border-radius:8px}
 .chat-head .x:hover{color:#fff;background:rgba(255,255,255,.08)}
-#chatLog{flex:1;overflow-y:auto;padding:12px 14px;display:flex;flex-direction:column;gap:9px}
-.chat-msg{font-size:13px;line-height:1.4;word-break:break-word}
+#chatLog{flex:1;overflow-y:auto;padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.chat-msg{font-size:13px;line-height:1.4;word-break:break-word;display:flex;gap:8px;align-items:flex-start}
+.chat-msg .ava{flex:none;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:14px;box-shadow:0 2px 6px rgba(0,0,0,.4)}
+.chat-msg .body{flex:1;min-width:0}
 .chat-msg .n{font-weight:700;color:var(--gold2);margin-right:6px}
 .chat-msg .t{color:var(--ink)}
 .chat-msg .ts{color:var(--ink-dim2);font-size:10.5px;margin-left:6px}
@@ -195,11 +198,19 @@ header{max-width:1280px;margin:0 auto;padding:34px 18px 6px;position:relative}
 .chat-form input:focus{outline:none;border-color:var(--elixir)}
 .chat-form button{background:linear-gradient(180deg,#8b4dff,#5b21b6);border:none;color:#fff;
   border-radius:12px;padding:0 15px;font-weight:700;cursor:pointer;font-size:13px}
-.chat-name{padding:10px 14px;border-bottom:1px solid rgba(160,120,255,.18);display:flex;gap:8px}
+.chat-name{padding:12px 14px;border-bottom:1px solid rgba(160,120,255,.18);display:flex;flex-direction:column;gap:9px}
+.chat-name .lbl{font-size:11px;color:var(--ink-dim2);font-weight:700;letter-spacing:.3px}
+.avatar-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.avatar-opt{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-size:14px;cursor:pointer;border:2px solid transparent;transition:.12s}
+.avatar-opt:hover{transform:scale(1.12)}
+.avatar-opt.sel{border-color:#fff;box-shadow:0 0 0 2px var(--gold)}
+.chat-name .row{display:flex;gap:8px}
 .chat-name input{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(160,120,255,.25);
   border-radius:10px;padding:8px 10px;color:#fff;font-size:12.5px;font-family:var(--fb)}
 .chat-name button{background:linear-gradient(180deg,#ffe89a,#ffc93c);border:none;color:#3a2600;
   border-radius:10px;padding:0 13px;font-weight:800;cursor:pointer;font-size:12px}
+.chat-edit-me{cursor:pointer;color:var(--ink-dim2);font-size:10.5px;text-decoration:underline;text-underline-offset:2px}
 @media (max-width:480px){#chatPanel{right:14px;left:14px;width:auto;bottom:88px}#chatFab{right:16px;bottom:16px}}
 
 /* ---------- search ---------- */
@@ -483,11 +494,16 @@ footer a{color:var(--gold);text-decoration:none}
     <span class="dot" style="width:8px;height:8px;border-radius:50%;background:var(--green)"></span>
     <strong>Canlı Sohbet</strong>
     <span id="chatOnlineMini" style="font-size:11px;color:var(--ink-dim2)"></span>
+    <span class="chat-edit-me" id="chatEditMe" style="display:none">profilim</span>
     <span class="x" id="chatClose">✕</span>
   </div>
   <div class="chat-name" id="chatNameBar">
-    <input id="chatNameInput" maxlength="18" placeholder="Takma adın (örn. Kıvılcım42)">
-    <button id="chatNameSave">Tamam</button>
+    <div class="lbl">Profil resmi seç</div>
+    <div class="avatar-grid" id="avatarGrid"></div>
+    <div class="row">
+      <input id="chatNameInput" maxlength="18" placeholder="Takma adın (örn. Kıvılcım42)">
+      <button id="chatNameSave">Tamam</button>
+    </div>
   </div>
   <div id="chatLog"><div class="chat-sys">Sohbete bağlanılıyor…</div></div>
   <form class="chat-form" id="chatForm" style="display:none">
