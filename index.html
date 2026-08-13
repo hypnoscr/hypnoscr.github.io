@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>HYPNOS CR Video Arşivi — 983 Clash Royale videosu, tek aramada</title>
+<meta name="description" content="HYPNOS CR (@hypnoscr) kanalının tüm videoları tek sayfada. Kıvılcım, K.A.O.S, yeşil buton, kahramanlar, evrimler, turnuva… ne izlemek istediğini yaz, saniyeler içinde bul. Resmi olmayan hayran arşivi.">
+<meta name="keywords" content="hypnos cr, hypnoscr, hypnos clash royale, hypnos cr videoları, clash royale türkçe, hypnos cr arşiv, kıvılcım destesi, kaos modu">
+<meta name="author" content="HYPNOS CR hayran arşivi">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#1d1049">
+<link rel="canonical" href="https://hypnoscr.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HYPNOS CR Video Arşivi">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:url" content="https://hypnoscr.github.io/">
+<meta property="og:title" content="HYPNOS CR Video Arşivi — 983 video, tek aramada">
+<meta property="og:description" content="Kanalın tüm videoları tek sayfada. Ne izlemek istediğini yaz, saniyeler içinde bul.">
+<meta property="og:image" content="https://hypnoscr.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HYPNOS CR Video Arşivi — 983 video, tek aramada">
+<meta name="twitter:description" content="Kanalın tüm videoları tek sayfada. Ne izlemek istediğini yaz, saniyeler içinde bul.">
+<meta name="twitter:image" content="https://hypnoscr.github.io/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231d1049'/%3E%3Cpath d='M18 68h64l6-38-20 14-18-24-18 24-20-14z' fill='%23ffc93c'/%3E%3Crect x='18' y='72' width='64' height='10' rx='4' fill='%23ffc93c'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"HYPNOS CR Video Arşivi",
+"url":"https://hypnoscr.github.io/","inLanguage":"tr",
+"description":"HYPNOS CR kanalının tüm videolarını arayabileceğin resmi olmayan hayran arşivi.",
+"about":{"@type":"Person","name":"HYPNOS CR","alternateName":"@hypnoscr","url":"https://www.youtube.com/@hypnoscr"},
+"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://hypnoscr.github.io/?q={search_term_string}"},"query-input":"required name=search_term_string"}}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg0:#07041a; --bg1:#120a33; --bg2:#1d1049;
+  --arena:#2a1a68; --arena2:#3a2490;
+  --gold:#ffc93c; --gold2:#ffe89a; --gold-dk:#9a6a00;
+  --elixir:#b06bff; --elixir2:#6f3fd6;
+  --blue:#3fb6ff; --pink:#ff4fa3; --green:#3ddc84; --red:#ff5a5a;
+  --ink:#efeaff; --ink-dim:#a99fd4; --ink-dim2:#7d74ad;
+  --card:rgba(38,22,86,.72); --card-b:rgba(160,120,255,.22);
+  --r:18px;
+  --fh:'Baloo 2',system-ui,'Segoe UI',sans-serif;
+  --fb:Inter,system-ui,'Segoe UI',Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--fb); color:var(--ink); background:var(--bg0);
+  min-height:100vh; overflow-x:hidden;
+  -webkit-tap-highlight-color:transparent;
+}
+/* ---------- animated arena background ---------- */
+#bg{position:fixed;inset:0;z-index:-3;
+  background:
+    radial-gradient(1200px 700px at 15% -10%, #4b2ba8 0%, transparent 60%),
+    radial-gradient(1000px 620px at 88% 8%, #7a2b8f 0%, transparent 58%),
+    radial-gradient(900px 700px at 50% 110%, #17307a 0%, transparent 62%),
+    linear-gradient(180deg,var(--bg1) 0%,var(--bg0) 60%,#05030f 100%);
+}
+#bg::after{content:"";position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(180,140,255,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(180,140,255,.055) 1px,transparent 1px);
+  background-size:52px 52px;
+  mask-image:radial-gradient(circle at 50% 20%,#000 0%,transparent 78%);
+  animation:gridDrift 26s linear infinite;
+}
+@keyframes gridDrift{to{background-position:52px 52px,52px 52px}}
+#orbs{position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none}
+.orb{position:absolute;border-radius:50%;filter:blur(.4px);opacity:.5;
+  background:radial-gradient(circle at 32% 28%,#fff9,#b06bff 42%,#5b21b6 78%);
+  box-shadow:0 0 22px 6px rgba(176,107,255,.28);
+  animation:rise linear infinite}
+.orb.g{background:radial-gradient(circle at 32% 28%,#fff9,#ffd75e 42%,#a06b00 78%);box-shadow:0 0 22px 6px rgba(255,201,60,.24)}
+.orb.b{background:radial-gradient(circle at 32% 28%,#fff9,#59c9ff 42%,#0b62a8 78%);box-shadow:0 0 22px 6px rgba(63,182,255,.22)}
+@keyframes rise{
+  0%{transform:translate3d(0,110vh,0) scale(.6);opacity:0}
+  10%{opacity:.55}
+  90%{opacity:.35}
+  100%{transform:translate3d(var(--dx,20px),-14vh,0) scale(1.1);opacity:0}
+}
+#spark{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background:
+   radial-gradient(2px 2px at 20% 30%,rgba(255,255,255,.55),transparent 60%),
+   radial-gradient(2px 2px at 70% 60%,rgba(255,214,102,.55),transparent 60%),
+   radial-gradient(1.6px 1.6px at 45% 80%,rgba(176,107,255,.6),transparent 60%),
+   radial-gradient(1.6px 1.6px at 85% 20%,rgba(255,255,255,.4),transparent 60%);
+  animation:twinkle 5.5s ease-in-out infinite alternate}
+@keyframes twinkle{from{opacity:.25}to{opacity:.65}}
+
+/* ---------- intro gate ---------- */
+#intro{position:fixed;inset:0;z-index:999;display:grid;place-items:center;background:#05030f}
+#intro .gate{position:absolute;top:0;bottom:0;width:52%;
+  background:linear-gradient(180deg,#3a2490,#16092f 70%);
+  box-shadow:0 0 60px rgba(0,0,0,.7) inset;}
+#intro .gate::before{content:"";position:absolute;inset:0;
+  background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 2px,transparent 2px 26px),
+                   repeating-linear-gradient(0deg,rgba(0,0,0,.25) 0 2px,transparent 2px 40px)}
+#intro .gate.l{left:0;border-right:4px solid var(--gold);animation:gateL 1.15s .75s cubic-bezier(.7,0,.2,1) forwards}
+#intro .gate.r{right:0;border-left:4px solid var(--gold);animation:gateR 1.15s .75s cubic-bezier(.7,0,.2,1) forwards}
+@keyframes gateL{to{transform:translateX(-102%)}}
+@keyframes gateR{to{transform:translateX(102%)}}
+#intro .crown{position:relative;z-index:2;text-align:center;animation:crownPop 1.1s cubic-bezier(.2,1.4,.4,1) both}
+#intro .crown .c{font-size:78px;filter:drop-shadow(0 0 26px rgba(255,201,60,.85))}
+#intro .crown .t{font-family:var(--fh);font-weight:800;font-size:30px;letter-spacing:3px;
+  background:linear-gradient(180deg,#fff,var(--gold) 55%,#b47a00);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:6px}
+@keyframes crownPop{0%{transform:scale(.4) rotate(-14deg);opacity:0}60%{transform:scale(1.08) rotate(3deg);opacity:1}100%{transform:scale(1) rotate(0)}}
+#intro.done{animation:introOut .5s .95s ease forwards;pointer-events:none}
+@keyframes introOut{to{opacity:0;visibility:hidden}}
+
+/* ---------- header ---------- */
+header{max-width:1280px;margin:0 auto;padding:34px 18px 6px;position:relative}
+.hero{display:grid;gap:8px 22px;align-items:center;
+  grid-template-columns:auto 1fr auto;
+  grid-template-areas:"av name yt" "av sub yt" "av bdg yt"}
+.avatar{grid-area:av;width:98px;height:98px;border-radius:26px;object-fit:cover;flex:none;
+  border:3px solid var(--gold);background:linear-gradient(160deg,#3a2490,#16092f);
+  box-shadow:0 0 0 6px rgba(255,201,60,.12),0 18px 44px rgba(0,0,0,.55);
+  animation:floaty 5s ease-in-out infinite}
+.avatar.fb{display:grid;place-items:center;font-size:44px;line-height:1}
+.hero .nm{grid-area:name;min-width:0}
+.hero .sub{grid-area:sub}
+.hero .badges{grid-area:bdg}
+.yt-link{grid-area:yt}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-9px) rotate(1deg)}}
+.hero h1{font-family:var(--fh);font-weight:800;font-size:clamp(30px,6vw,58px);margin:0;line-height:.98;
+  background:linear-gradient(180deg,#fff 0%,var(--gold2) 42%,var(--gold) 68%,#9a6a00 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 4px 0 rgba(0,0,0,.35)) drop-shadow(0 0 26px rgba(255,201,60,.35));
+  letter-spacing:.5px}
+.hero .handle{color:var(--ink-dim2);font-size:13px;font-weight:600;margin-top:4px;letter-spacing:.4px}
+.hero .sub{color:var(--ink-dim);font-size:14.5px;margin:7px 0 0;max-width:60ch;line-height:1.55}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.badge{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;
+  padding:7px 13px;border-radius:999px;color:var(--gold2);
+  background:linear-gradient(180deg,rgba(255,201,60,.18),rgba(255,201,60,.06));
+  border:1px solid rgba(255,201,60,.34);backdrop-filter:blur(6px)}
+.badge b{color:#fff;font-weight:700}
+.btn-yt{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:700;font-size:14px;
+  color:#fff;padding:12px 20px;border-radius:14px;
+  background:linear-gradient(180deg,#ff3b3b,#c40000);border:1px solid #ff8080;
+  box-shadow:0 6px 0 #7a0000,0 14px 26px rgba(0,0,0,.45);transition:.14s}
+.btn-yt:hover{transform:translateY(-2px);box-shadow:0 8px 0 #7a0000,0 18px 30px rgba(0,0,0,.5)}
+.btn-yt:active{transform:translateY(4px);box-shadow:0 2px 0 #7a0000}
+
+/* ---------- search ---------- */
+.searchwrap{max-width:1280px;margin:26px auto 0;padding:0 18px;position:relative;z-index:5}
+.searchbar{position:relative;display:flex;align-items:center;gap:10px;
+  padding:6px 6px 6px 20px;border-radius:22px;
+  background:linear-gradient(180deg,rgba(58,36,144,.85),rgba(22,12,58,.9));
+  border:2px solid rgba(255,201,60,.42);
+  box-shadow:0 0 0 5px rgba(255,201,60,.07),0 22px 50px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.12);
+  transition:.22s}
+.searchbar:focus-within{border-color:var(--gold);box-shadow:0 0 0 6px rgba(255,201,60,.16),0 0 46px rgba(255,201,60,.3),0 22px 50px rgba(0,0,0,.55)}
+.sfield{display:flex;align-items:center;gap:12px;flex:1;min-width:0}
+.sbtns{display:flex;align-items:center;gap:8px;flex:none}
+.searchbar .ico{font-size:21px;opacity:.9;flex:none}
+#q{flex:1;min-width:0;background:transparent;border:0;outline:0;color:#fff;font-size:17px;font-weight:500;padding:16px 0;font-family:var(--fb)}
+#q::-webkit-search-cancel-button{display:none}
+#q::placeholder{color:#8f85c4}
+.sb-btn{flex:none;border:0;cursor:pointer;font-family:var(--fb);font-weight:700;font-size:13.5px;color:#3a2400;
+  padding:13px 17px;border-radius:16px;
+  background:linear-gradient(180deg,var(--gold2),var(--gold) 45%,#e0a200);
+  box-shadow:0 5px 0 #8a5c00,0 10px 20px rgba(0,0,0,.4);transition:.14s;white-space:nowrap}
+.sb-btn:hover{transform:translateY(-2px);box-shadow:0 7px 0 #8a5c00,0 14px 24px rgba(0,0,0,.45)}
+.sb-btn:active{transform:translateY(3px);box-shadow:0 2px 0 #8a5c00}
+.sb-btn.shake{animation:shake .5s}
+@keyframes shake{0%,100%{transform:rotate(0)}20%{transform:rotate(-9deg) scale(1.06)}40%{transform:rotate(8deg) scale(1.06)}60%{transform:rotate(-6deg)}80%{transform:rotate(4deg)}}
+.clearq{flex:none;background:transparent;border:0;color:var(--ink-dim);font-size:20px;cursor:pointer;padding:0 4px;display:none}
+.searchbar.has .clearq{display:block}
+.hint{margin:10px 2px 0;font-size:12.5px;color:var(--ink-dim2);display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.hint b{color:var(--gold);font-weight:600}
+.chipmini{background:rgba(176,107,255,.14);border:1px solid rgba(176,107,255,.3);color:#cfc0ff;
+  padding:3px 9px;border-radius:999px;cursor:pointer;font-size:12px;transition:.15s}
+.chipmini:hover{background:rgba(176,107,255,.3);transform:translateY(-1px)}
+
+/* ---------- filters ---------- */
+.filters{max-width:1280px;margin:20px auto 0;padding:0 18px}
+.frow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.flabel{font-size:11.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--ink-dim2);font-weight:700;margin-right:2px;flex:none}
+.chip{cursor:pointer;user-select:none;border:1px solid var(--card-b);background:rgba(40,24,92,.6);
+  color:var(--ink);font-size:13px;font-weight:600;padding:8px 14px;border-radius:999px;
+  display:inline-flex;align-items:center;gap:6px;transition:transform .16s,background .16s,border-color .16s,box-shadow .16s;
+  backdrop-filter:blur(6px)}
+.chip .n{font-size:11px;color:var(--ink-dim2);font-weight:600}
+.chip:hover{transform:translateY(-2px);border-color:rgba(176,107,255,.6);background:rgba(60,34,130,.72)}
+.chip.on{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#3a2400;border-color:#fff3c4;
+  box-shadow:0 5px 0 #8a5c00,0 10px 22px rgba(255,201,60,.28);animation:pop .28s}
+.chip.on .n{color:#6b4a00}
+@keyframes pop{0%{transform:scale(.86)}55%{transform:scale(1.11)}100%{transform:scale(1)}}
+select.sel{appearance:none;cursor:pointer;font-family:var(--fb);font-weight:600;font-size:13px;color:var(--ink);
+  padding:9px 34px 9px 14px;border-radius:12px;border:1px solid var(--card-b);
+  background:rgba(40,24,92,.75) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M2 4l4 4 4-4' fill='none' stroke='%23b9a8ff' stroke-width='2' stroke-linecap='round'/></svg>") no-repeat right 12px center;
+  outline:0;transition:.15s}
+select.sel:hover{border-color:rgba(176,107,255,.6)}
+select.sel option{background:#1d1049;color:#fff}
+.statusbar{max-width:1280px;margin:16px auto 0;padding:0 18px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.count{font-family:var(--fh);font-weight:700;font-size:18px;color:var(--gold2)}
+.count span{color:var(--ink-dim)}
+.reset{background:transparent;border:1px solid rgba(255,90,90,.4);color:#ff9a9a;font-size:12.5px;font-weight:600;
+  padding:6px 12px;border-radius:999px;cursor:pointer;transition:.15s}
+.reset:hover{background:rgba(255,90,90,.14);transform:translateY(-1px)}
+
+/* ---------- grid ---------- */
+main{max-width:1280px;margin:0 auto;padding:20px 18px 90px}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(256px,1fr));perspective:1400px}
+.card{position:relative;display:flex;flex-direction:column;text-decoration:none;color:inherit;
+  background:var(--card);border:1px solid var(--card-b);border-radius:var(--r);overflow:hidden;
+  box-shadow:0 12px 30px rgba(0,0,0,.45);
+  transform-style:preserve-3d;
+  transition:box-shadow .25s,border-color .25s;
+  animation:cardIn .5s cubic-bezier(.2,.9,.3,1) both;animation-delay:calc(var(--i) * 32ms);
+  backdrop-filter:blur(8px)}
+@keyframes cardIn{
+  from{opacity:0;transform:translateY(34px) rotateX(-14deg) scale(.94)}
+  to{opacity:1;transform:none}
+}
+.card:hover{border-color:rgba(255,201,60,.6);box-shadow:0 22px 50px rgba(0,0,0,.6),0 0 34px rgba(255,201,60,.18)}
+.card .thumb{position:relative;aspect-ratio:16/9;overflow:hidden;
+  background:linear-gradient(150deg,#3a2490,#1a0d44 60%,#120830)}
+.card .thumb::before{content:"👑";position:absolute;inset:0;display:grid;place-items:center;
+  font-size:34px;opacity:.16;filter:grayscale(.2)}
+.card .thumb img{position:relative;width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.2,.9,.3,1),filter .3s}
+.card:hover .thumb img{transform:scale(1.09)}
+.card .thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(8,4,26,.85));pointer-events:none}
+.shine{position:absolute;top:-60%;left:-120%;width:70%;height:240%;pointer-events:none;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.32),transparent);
+  transform:rotate(18deg);transition:none}
+.card:hover .shine{animation:sweep .85s ease}
+@keyframes sweep{to{left:160%}}
+.dur{position:absolute;right:8px;bottom:8px;z-index:2;font-size:11.5px;font-weight:700;color:#fff;
+  background:rgba(6,3,20,.85);padding:3px 8px;border-radius:7px;border:1px solid rgba(255,255,255,.16);letter-spacing:.3px}
+.play{position:absolute;inset:0;display:grid;place-items:center;z-index:2;opacity:0;transition:opacity .25s}
+.card:hover .play{opacity:1}
+.play i{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:20px;color:#3a2400;
+  background:linear-gradient(180deg,var(--gold2),var(--gold));box-shadow:0 8px 24px rgba(0,0,0,.5);
+  transform:scale(.7);transition:transform .28s cubic-bezier(.2,1.5,.4,1);padding-left:4px}
+.card:hover .play i{transform:scale(1)}
+.wl{position:absolute;left:8px;top:8px;z-index:3;width:34px;height:34px;border-radius:11px;cursor:pointer;
+  border:1px solid rgba(255,255,255,.2);background:rgba(6,3,20,.7);color:#cbbdf5;font-size:16px;line-height:1;
+  display:grid;place-items:center;transition:.16s;backdrop-filter:blur(4px)}
+.wl:hover{transform:scale(1.12);border-color:var(--gold);color:var(--gold)}
+.wl.on{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#3a2400;border-color:#fff3c4;animation:pop .3s}
+.card .meta{padding:12px 13px 13px;display:flex;flex-direction:column;gap:7px;flex:1}
+.card h3{font-family:var(--fb);font-size:14.5px;line-height:1.34;margin:0;font-weight:600;color:#fff;
+  display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.68em}
+.card h3 mark{background:linear-gradient(180deg,rgba(255,201,60,.35),rgba(255,201,60,.18));color:var(--gold2);
+  border-radius:4px;padding:0 2px}
+.card .sub{font-size:12px;color:var(--ink-dim);display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.card .sub .dot{opacity:.5}
+.card .tg{display:flex;gap:5px;flex-wrap:wrap;margin-top:auto;padding-top:4px}
+.card .tg span{font-size:10.5px;font-weight:600;padding:3px 8px;border-radius:999px;
+  background:rgba(176,107,255,.16);border:1px solid rgba(176,107,255,.28);color:#cfc0ff}
+.rank{position:absolute;right:8px;top:8px;z-index:3;font-family:var(--fh);font-weight:800;font-size:12px;color:#3a2400;
+  background:linear-gradient(180deg,var(--gold2),var(--gold));padding:3px 9px;border-radius:999px;
+  box-shadow:0 4px 12px rgba(0,0,0,.4)}
+
+.empty{text-align:center;padding:70px 20px;color:var(--ink-dim)}
+.empty .e{font-size:62px;filter:grayscale(.2);animation:floaty 3.4s ease-in-out infinite}
+.empty h3{font-family:var(--fh);font-size:26px;color:var(--gold2);margin:14px 0 6px}
+#more{display:grid;place-items:center;padding:34px 0 10px}
+#more button{cursor:pointer;font-family:var(--fh);font-weight:700;font-size:16px;color:#3a2400;padding:14px 30px;border:0;border-radius:16px;
+  background:linear-gradient(180deg,var(--gold2),var(--gold) 45%,#e0a200);box-shadow:0 6px 0 #8a5c00,0 14px 26px rgba(0,0,0,.4);transition:.14s}
+#more button:hover{transform:translateY(-2px)}
+#more button:active{transform:translateY(4px);box-shadow:0 2px 0 #8a5c00}
+
+/* ---------- toast ---------- */
+#toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,140%);z-index:60;
+  background:linear-gradient(180deg,rgba(58,36,144,.96),rgba(22,12,58,.96));border:1px solid rgba(255,201,60,.5);
+  color:#fff;padding:12px 20px;border-radius:14px;font-size:14px;font-weight:600;
+  box-shadow:0 18px 40px rgba(0,0,0,.6);transition:transform .38s cubic-bezier(.2,1.3,.4,1);pointer-events:none}
+#toast.show{transform:translate(-50%,0)}
+
+/* ---------- top button ---------- */
+#top{position:fixed;right:18px;bottom:18px;z-index:50;width:50px;height:50px;border-radius:16px;cursor:pointer;
+  border:1px solid rgba(255,201,60,.45);background:linear-gradient(180deg,rgba(58,36,144,.92),rgba(22,12,58,.95));
+  color:var(--gold);font-size:20px;display:grid;place-items:center;opacity:0;pointer-events:none;transition:.25s;
+  box-shadow:0 12px 28px rgba(0,0,0,.5);backdrop-filter:blur(6px)}
+#top.show{opacity:1;pointer-events:auto}
+#top:hover{transform:translateY(-3px);border-color:var(--gold)}
+
+footer{text-align:center;padding:26px 18px 40px;color:var(--ink-dim2);font-size:12.5px;line-height:1.8}
+footer a{color:var(--gold);text-decoration:none}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:auto 1fr;
+    grid-template-areas:"av name" "sub sub" "bdg bdg" "yt yt";gap:6px 16px}
+  .avatar{width:76px;height:76px;border-radius:20px}
+  .avatar.fb{font-size:34px}
+  .btn-yt{width:100%;justify-content:center;margin-top:8px}
+}
+@media (max-width:640px){
+  header{padding-top:20px}
+  .hero .sub{font-size:13.5px;margin-top:10px}
+  .badge{font-size:11.5px;padding:6px 11px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(152px,1fr));gap:12px}
+  .card h3{font-size:12.8px}
+  .card .sub{font-size:11px}
+  .card .tg span{font-size:9.5px;padding:2px 6px}
+  .wl{width:30px;height:30px;font-size:14px}
+  .searchbar{flex-direction:column;align-items:stretch;padding:8px;gap:8px;border-radius:20px}
+  .sfield{background:rgba(10,5,30,.5);border-radius:14px;padding:0 14px}
+  #q{font-size:16px;padding:13px 0}
+  .sbtns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .sb-btn{padding:12px 8px;font-size:13px;justify-content:center;text-align:center}
+  .filters .frow{gap:7px;margin-bottom:9px}
+  .chip{font-size:12px;padding:7px 11px}
+  .flabel{flex:1 1 100%;margin-bottom:-2px}
+  .searchwrap{position:sticky;top:0;padding-top:10px;padding-bottom:8px;
+    background:linear-gradient(180deg,rgba(7,4,26,.97) 78%,transparent);z-index:20}
+  .hint{margin-top:8px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+<div id="bg"></div>
+<div id="orbs"></div>
+<div id="spark"></div>
+
+<div id="intro">
+  <div class="gate l"></div><div class="gate r"></div>
+  <div class="crown"><div class="c">👑</div><div class="t">HYPNOS CR</div></div>
+</div>
+
+<header>
+  <div class="hero">
+    <img class="avatar" id="ava" src="https://yt3.googleusercontent.com/fz1kv1J14i6VaVMbCtREA4TgmZGLUuUueGDEMyeE8jgnIyojDNWPk3ohmJvtln8woh8AX7ohF-4=s400-c-k-c0x00ffffff-no-rj" alt="" referrerpolicy="no-referrer"
+         onerror="this.outerHTML='&lt;div class=&quot;avatar fb&quot; title=&quot;HYPNOS CR&quot;&gt;👑&lt;/div&gt;'">
+    <div class="nm">
+      <h1>HYPNOS CR</h1>
+      <div class="handle">@hypnoscr · Clash Royale</div>
+    </div>
+    <p class="sub">Günlük hayatın sıkıcılığından sizi çekip alacak videolar. Aşağıya ne izlemek istediğini yaz — <b style="color:#cfc0ff">"kıvılcım"</b>, <b style="color:#cfc0ff">"kaos"</b>, <b style="color:#cfc0ff">"kuzen"</b> — arşivdeki her video saniyeler içinde karşında.</p>
+    <div class="badges" id="badges"></div>
+    <div class="yt-link">
+      <a class="btn-yt" href="https://www.youtube.com/@hypnoscr" target="_blank" rel="noopener">▶ Kanala Git</a>
+    </div>
+  </div>
+</header>
+
+<div class="searchwrap">
+  <div class="searchbar" id="sbar">
+    <div class="sfield">
+      <span class="ico">🔍</span>
+      <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="Ne izlemek istersin? (kıvılcım, kaos, turnuva, japon…)">
+      <button class="clearq" id="clearq" title="Temizle">✕</button>
+    </div>
+    <div class="sbtns">
+      <button class="sb-btn" id="rand">🎲 Beni Şaşırt</button>
+      <button class="sb-btn" id="wlBtn" style="background:linear-gradient(180deg,#cfa8ff,#8b4dff 45%,#6a29d6);color:#fff;box-shadow:0 5px 0 #46168f,0 10px 20px rgba(0,0,0,.4)">★ Listem <span id="wlN">0</span></button>
+    </div>
+  </div>
+  <div class="hint">
+    <span>Popüler:</span>
+    <button class="chipmini" data-s="kaos">K.A.O.S</button>
+    <button class="chipmini" data-s="kıvılcım">kıvılcım</button>
+    <button class="chipmini" data-s="yeşil buton">yeşil buton</button>
+    <button class="chipmini" data-s="kuzen">kuzen</button>
+    <button class="chipmini" data-s="evrim">evrim</button>
+    <button class="chipmini" data-s="turnuva">turnuva</button>
+    <button class="chipmini" data-s="japon">japon</button>
+  </div>
+</div>
+
+<div class="filters">
+  <div class="frow"><span class="flabel">Konu</span><div id="topics" style="display:contents"></div></div>
+  <div class="frow"><span class="flabel">Kart</span><div id="cards" style="display:contents"></div></div>
+  <div class="frow">
+    <span class="flabel">Düzen</span>
+    <select class="sel" id="sort">
+      <option value="rel">🎯 En alakalı</option>
+      <option value="new">🆕 En yeni</option>
+      <option value="old">🕰️ En eski</option>
+      <option value="pop">🔥 En çok izlenen</option>
+      <option value="long">⏳ En uzun</option>
+      <option value="short">⚡ En kısa</option>
+    </select>
+    <select class="sel" id="dur">
+      <option value="all">⏱️ Tüm süreler</option>
+      <option value="s">Kısa (&lt; 15 dk)</option>
+      <option value="m">Orta (15–30 dk)</option>
+      <option value="l">Uzun (30 dk +)</option>
+    </select>
+    <select class="sel" id="per">
+      <option value="all">📅 Tüm zamanlar</option>
+      <option value="m1">Son 1 ay</option>
+      <option value="m3">Son 3 ay</option>
+      <option value="y1">Son 1 yıl</option>
+      <option value="y12">1–2 yıl önce</option>
+      <option value="y2">2 yıl+ (eski)</option>
+    </select>
+  </div>
+</div>
+
+<div class="statusbar">
+  <div class="count" id="count"></div>
+  <button class="reset" id="reset" style="display:none">✕ Filtreleri sıfırla</button>
+</div>
+
+<main>
+  <div class="grid" id="grid"></div>
+  <div id="more"></div>
+</main>
+
+<button id="top" title="Yukarı">↑</button>
+<div id="toast"></div>
+
+<footer>
+  HYPNOS CR resmi olmayan, hayran yapımı video arşividir · <span id="fcount"></span> video ·
+  Tüm videolar <a href="https://www.youtube.com/@hypnoscr" target="_blank" rel="noopener">YouTube kanalında</a> yayınlanmaktadır.
+</footer>
+
+<script>
+/* =============== DATA =============== */
+const RAW = [["3mxu2FUuqpI", "1Gün Boyunca Toxic Oyuncu Olmak(K.A.O.S)", 105000, 2, 2486], ["80pyJRKM9nY", "X Yayını Öldürdüler", 82000, 4, 1561], ["eMVE94jXz2g", "Clash Royale Tarihinde Bir İlk Yaşandı", 99000, 5, 1455], ["aCM51OS5LMc", "En G4Y Evrim Geldi:Elit Barbarlar", 117000, 6, 1793], ["ZlmEMI0tuWE", "Yeni Kahraman Yaramaz Oyuna Geldi", 88000, 7, 1954], ["0zzhNd9ZAVY", "Yeni Çekilişli K.A.O.S Modu Geldi", 106000, 8, 2241], ["XEWBlJ1nk14", "En Güçlü Kahraman\"Valkür\" Oyuna Geldi", 101000, 9, 1655], ["aUuGI3L4-5g", "Elveda Kuzen🥲[FİNAL]", 94000, 11, 2750], ["_8OY6yu4YHI", "Öğretmen Oldum!", 86000, 13, 1498], ["kt6dX2-xERg", "Clash Royale Tamamen Değişti(Şampiyonlar Öldü)", 84000, 14, 1171], ["So2_1oSp2a4", "Yeşil Buton:En Cenabet Desteler", 105000, 14, 1240], ["wUyXY-GOAGU", "EN TİLT OLDUĞUM VİDEOM(K.A.O.S)", 150000, 14, 3971], ["dQ6bqxSPcL8", "En İyisi Benim(Tüm Desteler)", 124000, 21, 3792], ["oPx1MK88t8A", "K.A.O.S Modunun Hilesi:Mega Şovalye", 111000, 21, 2245], ["5EtZziuKC_E", "Kavgaya Gitsem Yanıma Alacağım 8Kart!", 107000, 21, 1523], ["B_X6QIJFkZM", "Koreli Youtuber Destemi Belirledi!", 88000, 28, 1700], ["TCxZD_B5ZnE", "Türkiye'de İlk:Tüm Hesabımı Maxladım", 118000, 28, 2210], ["7NvafrM5DDM", "K.A.O.S Modu'nun Bilinmeyen Tüm Özelliklerini Denedim", 137000, 30, 2898], ["z8AKdybrbcg", "1Gün Boyunca O.çlarıyla Mücadele ettim!", 96000, 30, 1285], ["vWbmVSPaOKE", "En Siktiriboktan Kahraman Çok Güçlendi!", 113000, 30, 1589], ["5LSj_bXwR5g", "Efsane K.A.O.S Modu Geri Döndü", 138000, 30, 1932], ["97uWw-fzj94", "[Yeni]Hile Gibi Efsanevi:Ronin Geldi", 128000, 30, 1529], ["QKAw01xrSt8", "Clash Royale Veda Vakti👋", 114000, 30, 1073], ["gDMrOdmFbPE", "Ölümsüz Dev İskelet", 83000, 30, 1262], ["OVyfQVBFoDw", "Eskisini Kırdım Yeni Telefonla İlk Videom!", 106000, 30, 1241], ["984DFnJQDgI", "Gerçek Hypnos Kim?", 106000, 30, 1613], ["fivh7_hlsmM", "3Basit Taktikle Oyunu Bitirin", 92000, 30, 1430], ["roKzOpLO-wU", "Maç Kaybedersem Hesabımı Siliyorum(Clickbait Yok)", 129000, 30, 1680], ["7eaA1_Q6l6U", "Cenabet Çark Destemi Belirledi", 120000, 30, 1553], ["W75ttgXO62c", "Yeşil Buton Çok Değişmiş", 121000, 30, 1355], ["MIJt75hwYD4", "Süpercell Yapay Zeka Çıkartmış(FİNAL)", 105000, 30, 1553], ["gU47lMSFfKA", "İlk Facecam'lı Videom", 151000, 30, 1218], ["AQRjxA8sSIo", "Dev Goblin Kıvılcıma Geri Döndüm", 109000, 30, 1419], ["srDqsUb2Nio", "Tokmakçıyı Unuttuk🥲", 81000, 30, 1438], ["d9LKtFlcYbU", "Gaza Gelmeyin", 94000, 30, 1419], ["BVxmzMljn6g", "Maç Kazanırsam Destem Toxicleşiyor", 101000, 30, 1541], ["LDgzzv6HX3c", "X Yayı Oynama Sanatı", 94000, 30, 1192], ["PE7EaSx4M_I", "Logbait Oynamak İçin Yaratılmışım", 94000, 30, 1394], ["tf465h5LcCA", "BABA GERİ DÖNDÜ", 107000, 30, 1320], ["SLn5pwhXHq8", "İsrailli Oyuncuya Vaat Edilmiş Şaplağı Koydum", 131000, 60, 1306], ["KX_QE-A2U_I", "Hypnos Cr 2026 En Komik Anlar", 98000, 60, 662], ["Q-CrL0-Z5pE", "En Zargana Kartı Seçmek", 116000, 60, 1124], ["I8StQQCSqV8", "Dolandırıldık! 4Aylık Emeğim Çöp Oldu", 110000, 60, 1349], ["qOSO3qbWu2U", "Yeni Evrim Dolandırıcılığı!", 104000, 60, 1325], ["FEn4oJ1MSpI", "Lan Bu Nasıl Kahraman?", 162000, 60, 2014], ["-Y4rHa_w2jk", "Sezon Sonu Maç Kaybedersem Para Kaybediyorum 2", 99000, 60, 1263], ["Gf3wjkoYi-Q", "Yeni Buz Prensesi Geldi", 98000, 60, 1212], ["YJ03Z7B_aZA", "Kimsenin Bilmediği Yeni Taktik Buldum!", 104000, 60, 1519], ["SfvvOzYudzQ", "Fatih Sultan Mehmet Destesiyle Clash Royali Fethetmek", 121000, 60, 1471], ["L0nzGvztWRQ", "Maymunlar Ligi:Clash Royale", 108000, 60, 1181], ["32a665U9EA4", "Bugün Benim Doğum Günüm🎂", 95000, 60, 1272], ["qSVqQ2_AJXo", "Her İksirin En Cenabet Kartıyla Oynamak", 112000, 60, 1475], ["C-SZDK8K7ck", "Global Derece Rozeti Alma Taktiği(Çok Kolay)", 98000, 60, 1687], ["FZaTrGJaJWA", "Yok Artık! TÜM BÜYÜLER Nerf Yedi", 96000, 60, 1103], ["RxNu8aZ7Pmo", "Yeşil Buton Peşimi Bırakmıyor", 154000, 60, 1596], ["5LRgYZkgpcw", "10Sene Oldu🥲", 93000, 60, 1308], ["0ymTtmTSg_E", "1Gün Boyunca Şerefsiz Oyuncu Olmak!", 135000, 60, 1588], ["n6LDYlabWcI", "Yeni Yeşil Buton Geldi", 150000, 60, 1900], ["OJ6bXiX8jNQ", "En Hızlı Kartı Seçmek", 105000, 60, 1130], ["u0vSvr3kJ1Q", "En İyisi Benim", 184000, 90, 3970], ["jq4WhSirkaQ", "Maç Kaybedersem 10Yıllık İsmimi Değiştiriyorum!", 123000, 90, 1245], ["SC8mCzefFsc", "Yeni Hileli Golem Taktiği!", 110000, 90, 1526], ["DL5xHKH8c04", "Oyunun Açığını Buldum", 147000, 90, 2045], ["Q0llQLlRoJY", "Daha Zeki Olan Kazanır:Mega Çekiliş", 122000, 90, 1959], ["QkqhLiYqhUU", "Olum Bu Ne Lan", 126000, 90, 1403], ["JggX4mOB7s4", "Şerefsiz Düşmanım Destemi Belirledi(Final)", 135000, 90, 1334], ["QwLABbv0z3Q", "Yeni Kahraman Kara Prens Geldi(Sakın Almayın)", 107000, 90, 1213], ["zKwxDFVcNk0", "Türkiye'nin En Ünlü Ateisti İle Kıran Kırana Vs Attım", 149000, 90, 2161], ["Y5gDpQJd1tc", "Yok Artık! Ne Yaptın Süpercell", 117000, 90, 1255], ["p2WrJKvhkgw", "Yeni Kahraman Atıcı Geliyor", 98000, 90, 1103], ["R5VY9gZf9Jo", "Zirvede Bırakıyorum:Yeşil Buton", 142000, 90, 1222], ["--gRmgW27Ew", "En Tilt Olduğum Video", 152000, 90, 2003], ["lqYIR35iVFw", "Japonlara Yenildim", 134000, 90, 1835], ["AdCi9t3Vpjw", "Oe Destesi Başıma Bela Oldu", 113000, 90, 1067], ["ULrUo5YAlso", "Daha Kötüsü Gelene Kadar En Kötüsü", 110000, 90, 1445], ["GrZeC2B310A", "Bu Modda Rakibim Yok", 135000, 90, 1250], ["Rtmr-QWFplA", "Yok Artık! Tarihin En Büyük Nerfi Geldi", 104000, 90, 932], ["LxD-WjlXM7U", "Linç Yorumlarınızı Okuyorum!", 252000, 90, 1707], ["R_lTw2dSiyM", "Bir Devrin Sonu...", 135000, 90, 1069], ["PHt36tPfO8k", "Çok Özlemişim🥲", 120000, 120, 1331], ["tN3xpk2q3IM", "En Ahlaksız Deste Çıktı(Kullanmayın)", 149000, 120, 1025], ["yt23QQsDDi0", "Kuzenle Vs Attık(Hile Yaptı)", 196000, 120, 2476], ["IEj0o_UAnmA", "En Cilveli Kartı Seçmek!", 139000, 120, 1182], ["1dP8ltRYstE", "Bu Ne Süpercell?", 139000, 120, 1384], ["wb9i98UDvFA", "Yeni Minyon Sürüsü Evrimini Beleşe Aldım", 125000, 120, 1207], ["O-FXR1kpLSo", "Yeni Kahraman Balon Geldi(Çook Güçlü)", 146000, 120, 1261], ["0rCnmANYBXs", "Süpercell Şaka Yapmış!", 128000, 120, 1088], ["i2vHK_4TbIg", "24 Saat Hiç Uyumadan Clash Royale Oynamak!", 122000, 120, 1211], ["QIJrehGWLr8", "Bugüne Kadarki Tüm Güncellemeleri Unutun", 107000, 120, 943], ["bDZj5nz24x0", "Yeni Tokmak Emojisini Çıkarttım", 164000, 120, 1261], ["O9gXml6b-ls", "Böyle Taktiğin Ta...", 142000, 120, 1366], ["cUYlV1oHVgY", "Clash Royalin P2w Olmadığı Zamanlar🥲", 105000, 120, 1223], ["2OLyh9e6NOY", "Yalnızca Kulübeler(K.A.O.S)", 179000, 120, 1729], ["9Q7GNA5GhyM", "0TL'ye İlk Kahramanımı Aldım", 111000, 120, 1480], ["2CNHsGvEQj4", "Vereceğin Destenin Ta AMK(Yeşil Buton)", 233000, 120, 1408], ["qQGuAXl7VkE", "1Gün Boyunca Toxic Oyuncu Olmak(K.A.O.S)", 251000, 120, 2370], ["wbBT_1AHwvQ", "Sabrım Taştı, Artık Yeter!", 158000, 120, 1340], ["sF4ziM9cQ_A", "Enes Batur Destemi Belirledi!", 202000, 120, 1050], ["cnJh2UGfkYE", "Süpercell Bedava Kahraman Dağıtıyor", 104000, 120, 1394], ["guvRwBvoDT4", "En Kötü Yeteneği Seçmek(K.A.O.S)", 210000, 120, 2749], ["S0AIukrKZSs", "Sadece Binalarla Oynadım", 118000, 120, 1096], ["t1bnENKk5eE", "Senin Gibi Bir Soytarı Beni Yenemez!", 134000, 150, 1413], ["DBcdcaO1ixY", "Kaos Modunun Tüm Özelliklerini Denedim", 295000, 150, 2265], ["b7fWvzIEF7c", "Heisenberg'in Babasını Buldum", 171000, 150, 1543], ["bfUjx8vygRs", "Önce Emoji Sonra Kart", 98000, 150, 1136], ["JmzVoGdPt4s", "Clash Royale Hile Modu Geldi!", 238000, 150, 1649], ["1OrIlP_3bqk", "Çekilişlide En Ucuz Kartı Seçmek", 101000, 150, 820], ["2dCOD4fmf18", "Bu Video İçin 1Yıl Bekledim!", 136000, 150, 1574], ["utFdZgQTaKE", "Kedi Olalı Bir Fare Tuttun Süpercell", 112000, 150, 1082], ["NZADk_SgY44", "Bıktım Bu Şerefsizlerden", 142000, 150, 1285], ["GcYHxYsWD04", "Kahraman Barbar Fıçısı Geldi", 109000, 150, 1108], ["xpI2hnayw9Q", "Parayı Buldum G.tü Başı Dağıttım", 163000, 150, 1114], ["7untWeaVJtc", "Vazelin'e Clash Royale Öğretiyorum", 115000, 150, 1754], ["yUhY0mXsG-A", "Hypnos Cr İle İftara Doğru", 140000, 150, 1532], ["UdspbfyXWGw", "Maç Kazanırsam Destem Ağırlaşıyor", 169000, 150, 1758], ["eTb2HBJs48c", "BOYKOT Başarılı Süpercell Özür Diledi", 153000, 150, 1291], ["vfR4SfdeJaU", "Kedimle Yeşil Butonda Vs Attık", 180000, 150, 1351], ["jnRRoGaYssQ", "+18 Fişekçi Atmak(Hiç Durmadan)", 151000, 150, 1738], ["joh0Jt0uVnA", "En Kolay Oynanan Deste Çıktı", 123000, 150, 1114], ["WWBhHVCSsnE", "Bir gün Hepiniz Beni Anlayacaksınız Demiştim", 158000, 150, 1083], ["ew5b0Rxqa7M", "Küfürbaz Yapay Zeka Grok’la Kavga Ettim", 177000, 150, 1372], ["E_Ou0Oe0Crg", "1000Kişilik Ödüllü Ramazan Turnuvası Yaptık", 126000, 150, 2186], ["Kn-vmpZbiqs", "Sonunda! Kahraman Mega Minyon Geldi", 135000, 150, 1329], ["Ta7bIunX8AQ", "Rekorr! En Çok Kullanılan Kart Belli Oldu", 118000, 180, 1020], ["QpBSjotW2TU", "Oyunun Enn Hızlı Destesini Yaptım(1.3)", 147000, 180, 1171], ["h0Z-dY2KDFo", "Osmanlı Destesiyle Oyunu Fethetmek(Final)", 149000, 180, 1300], ["GXMUl5pYI1Q", "1000Kişilik Dürüm Ödüllü Turnuva Yaptık", 137000, 180, 1718], ["XtYVZN_m3UQ", "Prime Hypnos Destesi Geri Döndü", 135000, 180, 1108], ["fKyxcxkBxrs", "Kahraman Büyücü Hile Açtı", 130000, 180, 1470], ["gyas1MogRGw", "İlk Clash Royale Hesabımı Buldum🥲", 171000, 180, 1385], ["9hnaU0Xi8vI", "Tiktokta Büyük Kavga Çıktı!", 143000, 180, 1076], ["e8ASDpaGAfM", "Kahraman Goblinler Hakkında Yanılmışım", 149000, 180, 1094], ["sNwXhXqk00Y", "Yeni Kahraman Goblinler Oyuna Geldi", 142000, 180, 1191], ["7t3PlrsGkUY", "Clash Royale Ekran Sürem🤡", 143000, 180, 962], ["QGb1-YRCbC8", "Bu Kart Bozuk", 148000, 180, 1239], ["i1bMdx1fzVU", "Ünlü E Sporcuya 3Taç Çektim", 162000, 180, 1034], ["tkuf8L0qLz4", "Oyunun G.T Deliği:Golem", 193000, 180, 1111], ["e_gQmHXQrXk", "Oyunun Açığını Buldum!", 159000, 180, 1072], ["a5VhupWgeFI", "1Gün Boyunca Şerefsiz Oyuncu Olmak!", 200000, 180, 1227], ["SbaKD7fd1vM", "Clash Royale Eşleştirme Sistemini İfşaladım", 175000, 180, 1212], ["ULTvgqI3mNU", "Cenabet Butonla Basıştık", 215000, 180, 995], ["LqfBa9DN0A0", "Kedim Destemi Belirledi", 203000, 180, 1504], ["CCKEf9YXk9k", "Mohammed Light Büyük Resmi Gördü", 151000, 180, 1052], ["LxKtRrHZhRo", "1 İksirlik Yeni Büyü Geldi", 148000, 180, 1081], ["i9KY1hdjkdU", "Bombacı Geri Döndü☠️", 188000, 180, 1037], ["__PVfOAeCjE", "Küreseldeki Oyuncular Destemi Belirledi", 187000, 180, 1303], ["0fkJRUsr0Dg", "Maç Kazanırsam Destem Hızlanıyor", 231000, 180, 1541], ["ybzkdzC6-ps", "En Güçlü Kahraman Geldi:Buz Golemi", 167000, 180, 1347], ["_swhicH_7-0", "Sonunda! Mega Çekiliş Oyuna Geldi", 198000, 180, 1591], ["7DgwPfFfYkE", "Türk Yapay Zeka Kumru Düzeltilmiş!", 167000, 180, 1082], ["njSwZ6VIUsg", "Evrimli Kartlar Oyundan Kalkıyor!", 178000, 180, 873], ["znSkwe4_FXA", "Oyunun En Çöp Kahramanı(Dolandırıldık)", 145000, 210, 1051], ["tL-1rKkkOwM", "En Cenabet Kartı Seçmek", 193000, 210, 1131], ["_EBj3tV4FHI", "Vereceğin Destenin Ta Amk Tiktok", 190000, 210, 922], ["7oouCEo2oZ8", "Hypnos Cr En İyi Anlar", 146000, 210, 604], ["Hg-WtYe4-fo", "Clash Royale Aslında Zevkliymiş!", 175000, 210, 1025], ["uDcxN2Fkpe8", "Mehter Marşı Dinleyerek 3 Taç Çekmek☠️", 186000, 210, 1392], ["-mTDYO3ynC8", "2026 Dünya Barışı!", 150000, 210, 988], ["imIjSQFN3EY", "Yeni Kahraman Büyücü Oyuna Geldi", 177000, 210, 1092], ["0uH0sYZMe9A", "Allah Birdaha Böyle Bir Sezon Yaşatmasın", 184000, 210, 1211], ["13VV8ZY5dzU", "O.ç Destesi Başıma Bela Oldu", 190000, 210, 1020], ["XAfdkrhBhuk", "Oyunun En Taştaşlı Destesi!", 144000, 210, 1073], ["xm8d0bzLZmk", "2025'in En Şerefsiz Desteleri", 187000, 210, 969], ["BG23wSKMBw0", "Yılbaşı Sandıkları Destemi Belirledi", 168000, 210, 1135], ["90QeX8RKv9s", "Elveda 2Vs2 🥲", 118000, 210, 1161], ["F33aiKuMKvw", "Süpercell Şampiyon Kartları Öldürdü!", 166000, 210, 1071], ["4IRAdSvaIYM", "Japonların En İyi Destesi Çıktı", 169000, 210, 1032], ["AHvmPqKVnKE", "Son Defa Siyasetçi Destesiyle Oynadım", 245000, 210, 1325], ["DobdxNQVc_w", "Maç Kaybedersem Para Kaybediyorum", 249000, 210, 1299], ["Xf6685_cVcc", "Meksikalı Karteller Başıma Bela Oldu", 189000, 210, 1028], ["ah_RVSPD6Bw", "Dükkan Kartları Destemi Belirledi", 166000, 210, 1078], ["siZPpzXSO5w", "Kuzenle Düşmanlara Bastık!", 275000, 210, 2126], ["dvnePo9cf00", "Şerefsiz Düşmanlarım Destemi Belirledi", 227000, 210, 1110], ["VMZVikJlH2E", "En Başarılı Ülkeler Açıklandı", 176000, 210, 1027], ["U5BKanmBuYM", "Clash Royale Batış Hikayesi!", 226000, 210, 1154], ["Ttber457ZWg", "Sonunda 2v2 Kupa Modu Oyuna Geldi", 160000, 210, 1098], ["2GD6f4g-NuU", "Cenabet Butonla Birbirimize Tıkladık", 398000, 210, 1379], ["kFAS75rgnXg", "Yeni Hile Gibi Taktik Çıktı", 186000, 210, 1184], ["qEoHnsu_fDY", "3Taç Çektiğim Eski Toxic Yayıncıyla Tekrar Karşılaştım", 226000, 210, 1573], ["BS_7zivsIvo", "Nasıl Mohammed Light'ın Öğretmeni Oldum?", 204000, 240, 1128], ["mkhpNlG7buk", "Eski Clash Royali Özledim🥲", 179000, 240, 985], ["hVx9TEikoZA", "Binici Noel Baba Oyuna Geldi", 155000, 240, 815], ["O1ybipo697k", "Her İksirin En Şerefsiz Kartıyla Oynadım", 222000, 240, 1168], ["ngx0cdlPjXA", "2.6 Ama Kahraman Silahşör", 166000, 240, 1151], ["FSM2mXQrBLU", "Süpercell Bedava Kahraman Dağıtıyor", 196000, 240, 1513], ["tWwgMG8sK8g", "Oyunun En Ağır Destesiyle Maç Kazanmak(7.3)", 227000, 240, 1108], ["ukcS_8o4KOQ", "Kendi Yetenek Destemi Yaptım", 201000, 240, 1050], ["aYEpEDevApA", "Oyunu Silme Vakti Gelmiş!", 247000, 240, 1292], ["ufmdbX_rqR0", "22Level Kahraman Mini Pekka Düşmanlara Bela Oldu", 184000, 240, 1182], ["uSH7fRLmm6M", "Kahraman Dev Oyuna Geldi", 151000, 240, 987], ["g0YfB3p2-F4", "Main Desteme Veda Ediyorum🥲", 197000, 240, 1068], ["grAIKoLDIXA", "Yeni Kahraman Mini Pekka Oyuna Geldi", 213000, 240, 1126], ["cvHJi4On-_s", "1000.Videoya Özel Kuzene 3 Taç Çektim", 307000, 240, 1834], ["W1Xv3UR9aas", "İlla ki biz de Şerefsiz Mi Olalım?", 234000, 240, 1082], ["2Fhf2aEebSU", "Süpercell Bana Darbe Yaptı", 219000, 240, 1090], ["5eg3jfxMUAc", "Oyundan İlk Defa Keyif Aldım😂", 176000, 240, 721], ["tggYAj5ImLA", "Getireceğin Güncellemenin Ta ... Süpercell", 370000, 240, 1356], ["M8Ty0c65_1U", "Hayatımın Maçını Oynadım!", 208000, 240, 1176], ["Id20maHhJDw", "Sonsuz İksir Modu Oyuna Geldi", 174000, 240, 779], ["WrnH0SWlwSk", "Yeni Bir Devir Başlıyor", 189000, 240, 954], ["d8vj7lRYcrk", "1Yılda 1 Kere Bile Kullanmadığım Kart", 221000, 240, 1027], ["ZJPEOyOklOU", "%100 Erkek Adam Destesi!", 224000, 240, 1252], ["iEQamxWxE-c", "Hiç Para Yatırmadan İlk Kartımı Maxladım", 156000, 240, 988], ["69xAJvGPeRk", "Golem Oyundan Kaldırılsın!", 215000, 240, 1192], ["LVlJyn5F3DI", "Yeşil Butonla Birbirimize Bastık!", 325000, 240, 1370], ["hRd5ietZ7x8", "Vereceğin Destenin Amk İnstagram...", 267000, 240, 1264], ["KG2ZNUWscjI", "Nooblar Bu Desteyi Kullanamıyor!", 200000, 240, 1183], ["Fxm_e3C3Shc", "Bombacı Geri Döndü🥲", 197000, 240, 1037], ["mzAuE2sT9fE", "Yeni T.O.K.M.A.K.Ç.I Doğuyor!", 215000, 270, 995], ["SRZAvMnuXp0", "Türk Yapay Zeka Kumru Vs Hypnos", 252000, 270, 1161], ["teHbTgd--2s", "Süpercell'in Parası Bitmiş!", 220000, 270, 1203], ["Qi50Ansp0R4", "Oyuna İlk Başladığım Destemi Buldum🥲", 211000, 270, 985], ["KeGPUR0FSbc", "Maç Kaybetme Garantili Deste", 184000, 270, 840], ["VfvwFHfN67s", "Clash Royale Bozuldu...", 183000, 270, 854], ["1M_FflYjcbc", "Prime Hypnos Dönemi Başlıyorr", 248000, 270, 1180], ["nnzkHoFs7w4", "10Dürüm Ödüllü 1000 Kişilik Büyük Turnuva Yaptık", 209000, 270, 1517], ["MVR34A7MSuw", "Bu Evrime Para Vermeyin", 219000, 270, 1195], ["o9emJ1fJfME", "Başıma Gelene Bakın...", 221000, 270, 1131], ["KtrrqPWzl_U", "Uçan Domuzcuklar Evrimi Oyuna Geldi", 230000, 270, 896], ["9cc9VA76hy4", "Dereceli Oyuncuları Sıraya Dizdim", 174000, 270, 873], ["Kdlxz0EJh_A", "3Silahşör Geri Döndü(%100Barzo)", 202000, 270, 968], ["MVMCWmnXkXI", "Toxic Yayıncıyı Rezil Ettim", 270000, 270, 945], ["ajCU69MuUAE", "Kıvılcımla Şov Yaptık💀", 257000, 270, 1036], ["aJ9YYM2AmEo", "Başaramadık(CRL-20Win)", 195000, 270, 900], ["-hC1yaPlrdw", "1 Gün Boyunca Toxic Oyuncu Olmak", 290000, 270, 1072], ["YG1NSriFTsM", "En İşe Yaramaz Kartı Seçmek!", 274000, 270, 1047], ["tKofNG3i03c", "Oyunun En Büyük Turnuvası Geldi!(20Win)", 254000, 270, 1469], ["Y8hwAjr1lHg", "Ee Nerede Kalmıştık?", 262000, 270, 1257], ["avk35aV5A58", "Cenabet Buton Değişmiş!", 458000, 270, 1068], ["bec7GWJgImw", "Kraliyet Hayaleti Evrimi Geldi(Galiba Dolandırıldık)", 268000, 270, 931], ["u1VCJDMbayo", "Türk Yapay Zeka Destemi Belirledi", 353000, 270, 1186], ["mObCVfUfdoA", "Keko Destesiyle Oynamak!", 388000, 270, 1102], ["LRncZqC7ZEU", "Dünya 3.sü Japonla Karşılaştım", 285000, 300, 1190], ["Y3nbUA5shTs", "Tiktok Destemi Belirledi(%100Şanssızlık)", 367000, 300, 1075], ["yOlcyMzUtq8", "Emojilerin Gerçek Anlamları", 301000, 300, 1154], ["W9bSRGJh3cM", "Yeni İskelet Ordusu Evrimi Oyuna Geldi", 297000, 300, 1029], ["1RdQUdmH2pc", "Maç Kaybedersem Kendimi Cezalandırıyorum", 373000, 300, 1162], ["zMXdkAJ-a0Q", "Kuzenle Kıran Kırana 1vs1!", 505000, 300, 1564], ["60j6Qhj_QLM", "Cenabet Buton Bu Sefer Şaşırttı!", 497000, 300, 1124], ["sdwSTqzQHko", "Clash Royale Zulmü", 354000, 300, 1348], ["pSxQCfio6xA", "Neden Video Atmıyorum?", 381000, 330, 1087], ["fOt9pTPKXvs", "Oyunun En Ağır Destesiyle Oynamak(7.3)", 449000, 330, 1128], ["AbTZSSZaBk4", "Yalvarırım 2.6 Oyna!", 332000, 330, 951], ["aPnPIYQjPN4", "Sarmaşık Oyunu Bozdu", 216000, 330, 922], ["MKF31jtbDVs", "Kuyruk Sallama Emojisi Geldi", 245000, 330, 1205], ["YNWWXy15uEk", "Çekilişlide En İşe Yaramaz Kartı Seçmek", 357000, 330, 814], ["-RlGQSoPsaE", "Yeni Büyü Sarmaşık Oyuna Geldi", 251000, 330, 1116], ["z5WtLcYa_tI", "Sezonun Son Günü☠️", 195000, 330, 1166], ["pD4uPnIEelo", "Yavru Ejderha Evrimi Geldi", 246000, 330, 1010], ["wIeMhYBBjlY", "En Şerefsiz Oyuncuya Denk Geldim", 389000, 330, 1229], ["p3KfbsSfSHw", "Tomruk Oyunun En Güçlü Kartı Oldu!", 270000, 330, 1098], ["58Mv4lViVMI", "Hiç Para Yatırmadan 0 dan 10.000e", 293000, 330, 970], ["1Hq7PVMiwQw", "Edepsiz İksir Golemciyi Terbiye Ettim", 453000, 330, 1185], ["CQYYf0AmqNE", "Vpnle Japonyaya Bağlandım", 289000, 330, 1160], ["nK3YAMUEy9I", "Küreseldeki Oyuncular Destemi Belirledi!", 336000, 330, 870], ["PX_OBzBBinQ", "En Tatlı Emoji Geldi", 224000, 330, 965], ["mAS_8J6oLRU", "Bu Videoyu Ailenizin yanında İzleyebilirsiniz!", 253000, 330, 897], ["DxzbAmT8cYA", "Gerçek Yetenek Destesi Çıktı", 214000, 330, 798], ["cykxC0iJ5vY", "Bu Desteleri Kullanmayanları Dövüyorlar", 197000, 330, 738], ["f-NRr8pkm3g", "Bu Video Zorla Çektirildi!", 244000, 330, 838], ["8D6I16cSSVM", "500.000Aboneye Özel Kuzenle Japonlara 3Taç Çektik", 350000, 330, 1496], ["BThUr5Lr_wE", "Oyunun En İyi Destesi Çıktı", 254000, 330, 1029], ["DuWjiaA5K3w", "Yeşil Buton Bana Bastı", 648000, 330, 1106], ["UrQ898iKPaY", "15Dürüm Ödülü 1000Kişilik Turnuva Yaptık", 316000, 330, 1224], ["ZyUrGi7sVx4", "Takipçilerimin Destesiyle Oynadım", 243000, 330, 879], ["8v6LGkdCrCQ", "X Yayı Metaya Girdi☠️", 289000, 330, 1237], ["aFTGlOxAxZw", "En Sevdiğim Kart", 307000, 365, 1007], ["k9Ehz_kVC64", "Yapay (geri)Zeka Destemi Belirliyor", 345000, 365, 1306], ["F6W3bR1VE2o", "Golem Çok Güçlendi☠️", 301000, 365, 993], ["n2VyZMH-ygI", "En Şerefsiz Evrim Bedava Dağıtılıyor", 255000, 365, 790], ["UZ8PeHMxMxk", "Kazıklandık", 240000, 365, 1132], ["YNRmFQG1lOI", "Hain Kuzenim Destemi Belirliyor", 489000, 365, 1139], ["CQ3vX0TB12E", "Ben Destemi Buldum☠️", 265000, 365, 912], ["55FGfCFm3xg", "En Hızlı Fırın Destesi(1.6)", 255000, 365, 1173], ["a__uWsBd_Zs", "En Tipsiz Kartı Seçmek", 379000, 365, 1013], ["XKAgZ2lz3HI", "Yeni *Yürüyen* Fırın Evrimi Oyuna Geldi", 325000, 365, 1232], ["B4dktq2KaG8", "Böyle Eşleştirme Sisteminin Allah Belasını Versin", 329000, 365, 852], ["2jOvCGP0EX0", "Süper Roket Oyuna Geldi", 322000, 365, 723], ["LczXkHEgfgY", "Küresele Kasıyoruz", 351000, 365, 1229], ["ejne8o2_jiA", "Kıvılcım Zamanı", 258000, 365, 873], ["wciB0vcUN9E", "İyi Eşleşme Alma Taktiği!", 249000, 365, 803], ["-G9ib_JhhCA", "Dükkana Tokmak Emojisi Geldi☠️", 338000, 365, 826], ["sed3u8r6AQc", "Oyunun En O.ç Oyuncusu İle Karşılaştım", 618000, 365, 940], ["b8jevWwhMgI", "Oyunun En Çöp Emojisi Geldi", 251000, 365, 897], ["BDLFEdatv1Q", "Oyun Bedava 4 Evrim Dağıtıyor", 221000, 365, 757], ["p2Y30GcmLso", "%100Yetenek Destesi Çıktı", 281000, 365, 904], ["qh5hmN6YlHQ", "Gariban Hesapta İlk Evrimi Açtım", 261000, 365, 899], ["gxAyc3dlrQU", "Düşmanlarımın Destesini Çalarak Kupa Kasmak", 462000, 365, 1044], ["HB3pdk8HiQU", "Japon Oyuncu Destemi Belirledi!", 360000, 365, 962], ["3H1XEWT1r-8", "Hypnos Cr Destesi Ölmüş!", 273000, 365, 1080], ["v7rRsCzf5F4", "Trump Emojisi Gelmiş", 263000, 365, 1021], ["weGl2XGlliw", "Squid Game Destesiyle Oynamak", 311000, 365, 1094], ["GS2P99ft-Cg", "Şerefsiz Buton Destemi Belirliyor", 844000, 365, 1240], ["oTwsoLpTliA", "1Gün Boyunca Toxic Oyuncu Olmak", 567000, 365, 1147], ["lHv-lY_iF-c", "1000Kişilik Ödüllü Turnuva Yaptık", 320000, 365, 1210], ["kI79QtMqQwc", "Her İksirin En Cenabet Kartıyla Oynamak", 337000, 365, 1021], ["gMx1HImDOU8", "Yeni 2.6 Destesi Yaptım Ama...", 358000, 365, 962], ["QVTN6aA-IHA", "X Yayıyla Şov Yaptım☠️", 274000, 365, 1136], ["P3lalqlAySk", "En Şişman Kartı Seçmek!", 314000, 365, 936], ["_Z4fT15wyZg", "5TL'lik Tft Modu Gelmiş!", 275000, 365, 1235], ["lT6wgtyMcE0", "Yeni Ruh İmparatoriçesi Kartı Oyuna Geldi", 338000, 365, 1212], ["j9uAHg27XPY", "Oyunu Bitirdim(10.000 Kupa)", 300000, 365, 711], ["PuDNxEbrNzo", "Yeni İskelet Fıçısı Evrimi Oyuna Geldi", 313000, 365, 1142], ["VnKYR7Smn7s", "Bu Videoda İçimi Döküyorum", 353000, 365, 768], ["JfpN-o-mkPk", "Barzo Rakipleri Terbiye Ettim", 289000, 365, 893], ["q-E0O5fI2tY", "Sapık Rakibe Denk Geldim!", 396000, 365, 1052], ["EIy2EfzsL4g", "İmkansız Maçı Çevirdim", 292000, 365, 1052], ["qZRSH7Cyj7o", "15.000🏆 Oyuna Geliyor", 322000, 365, 1251], ["jui7hFdBphU", "İksir Golemi Oynamak Zorunda Kaldım!", 344000, 365, 929], ["NHocdY0RHXc", "Clash Royale", 342000, 365, 898], ["FzRq3TUasq8", "Beklediğimiz Haber Geldi!", 269000, 365, 868], ["01TzEeCN65M", "Böyle Bitmemeliydi...", 281000, 365, 836], ["nK12Isti8PE", "Sonsuz Balıkçı Döngüsü☠️", 316000, 365, 896], ["Kcmg798SKiM", "Oyunun En Torpilli Destesi", 294000, 365, 898], ["pv1njoWDgrE", "Oyunun En Hızlı Destesi", 354000, 365, 976], ["l4ycAit0OAg", "15Bin Elmas Ödüllü Turnuva!", 408000, 365, 1353], ["aMTcd4DULlA", "Yeni Şerefsiz Destesi Çıkmış", 378000, 365, 918], ["woNKFxmEdaY", "Yeni Akım Sneaky Golem😈", 388000, 365, 945], ["DghwhvOWQPU", "Kötü Eşleşme Alma Taktiği (%100 Çalışıyor)", 380000, 365, 1212], ["hKzn6cUcvLA", "Fake 2.6 Destesiyle Oynadım☠️", 517000, 365, 919], ["UfCVOEMOvv0", "Üçlü Büyücü Süper Kartı Oyuna Geldi", 322000, 365, 858], ["PeEwy24Kvko", "Böyle Butonun Allah Belasını Versin", 584000, 365, 889], ["eElRYsoOv88", "1 Gün Boyunca Toxic Oyuncu olmak", 620000, 365, 1243], ["s4u5nTDNhgU", "Bombacı Geri Döndü", 387000, 365, 1195], ["K3-8r5TKsQA", "Dev Sandıklar Destemi Belirledi(%100Şanssızlık)", 327000, 365, 838], ["JSl5vMEMerI", "En İyi Evrimler Bir Destede", 350000, 365, 965], ["gCU_AkZRrYk", "Edepsiz Bir Teklif Aldım", 437000, 365, 974], ["nu8Vd9i66nk", "Takipçimin İsteğini Yerine Getirdim", 319000, 365, 1066], ["jJk76SMSaDQ", "Zenginlerin Oyunu Clash Royale!", 311000, 365, 1004], ["Pc44VMLPxMc", "Oyunu Bitirmek İçin En İyi Desteler(9000🏆)", 413000, 365, 1013], ["ghm3jAxzLdQ", "Clash Royale Eşleştirme Sistemi...", 456000, 365, 1072], ["G9kwiql0Szo", "1Level Kartlarla Düşük Kupadakileri Trollemek", 337000, 365, 892], ["-pYr0GlcnDs", "En Şerefsiz Kartı Seçmek", 525000, 365, 1005], ["zOUrMpxzAAw", "0'dan Clash Royale Başlamak", 504000, 365, 1107], ["_5VII0fROJI", "Beni Oyuna Başlatan Kuzenle 2v2(Sesli)", 553000, 365, 1992], ["rCIU6CevlNE", "Efsane 2v2 Kupa Modu Geri Geldi", 297000, 365, 1118], ["IvskRSX8SbQ", "Türk Usulü Kupa kasmak", 340000, 365, 694], ["hajIz0fMmUY", "Yeni Cehennem Ejderhası Evrimi Geldi", 413000, 365, 1166], ["H1Mez-uGPIk", "Balıkçı Geri Döndü☠️", 402000, 365, 1165], ["eJqvpjpRdRc", "Bu Kartı Daha Önce Hiç Kullanmadım", 361000, 365, 962], ["kvanC9v1Hm4", "Bu Desteyle Her Maç 3 Taç!", 377000, 365, 1136], ["PvPuILteUxc", "Fatih Sultan Mehmet Destesiyle Oynadım", 634000, 365, 1336], ["xJ3vZXRzcKg", "Balıkçıdan Kurtuldum", 504000, 365, 1212], ["l57A86qFw14", "En Şerefsiz Kart Geri Döndü", 325000, 365, 792], ["f8BXmITrsL0", "500 Bin Altın Değerindeki Emojiyi Bedava Aldım", 257000, 365, 638], ["xp0AUjYHGpQ", "Düşmanlarım Destemi Belirledi", 553000, 365, 1256], ["KwWP65NpBAQ", "%100Adaletli Mega Çekiliş Turnuvası Geldi", 675000, 365, 1626], ["aL4tYj4iPb4", "Video Başlıkları...", 432000, 365, 909], ["QkUmdssjL8U", "Kıvılcım Zamanı", 415000, 365, 1125], ["5kii0_phat0", "Japon Destesiyle Oynadım", 369000, 365, 1143], ["RAQJcqhGvW0", "Barzo Rakipleri Cezalandırdım☠️", 395000, 365, 974], ["SYlecbXAI-g", "Dükkan Kartları Destemi Belirledi", 463000, 365, 1087], ["-HfMcnd3gD8", "Favori Destem", 293000, 365, 1151], ["fjh4gtePEDY", "Her İksirin En Şerefsiz Kartıyla Oynamak", 772000, 365, 1047], ["Lr2Ll4a2fSI", "2.6 Ama Köstebek", 282000, 365, 1309], ["Jr4fP4pCJLE", "Bir Devrin Sonu...", 438000, 365, 1130], ["zpP4918VT7Q", "Yeni Evrimin En İyi Destesi", 277000, 365, 1140], ["I7vsC1dTMl4", "Sonunda Supercell Hatasını Kabul Etti", 465000, 365, 1430], ["B_GhkYj_8cI", "Oyunun En Ağır Destesini Yaptım Eski Dünya 1. İle Karşılaştım", 1000000, 365, 1108], ["0aylnQu3LU0", "En Obez Kartı Seçmek", 451000, 365, 898], ["ZYsOoYWqA2k", "Para Tuzağı", 256000, 365, 933], ["9t9_vGdDfEI", "Yeni Toxic Emoji Geldi", 433000, 365, 1738], ["B9VvtRPjPU4", "Yeni Goblin Kulübesi Geldi!", 265000, 365, 998], ["YCIm3EOCEw0", "Toxic Oyuncunun Klanını Bastım", 593000, 365, 1620], ["JIyrmuB4kbs", "En Pahalı Kule Görünümü Geldi(1Milyon Altın)", 307000, 365, 938], ["j-1ZUVXiSR8", "Yeni Cadı Evrimi Oyuna Geldi", 241000, 365, 911], ["a7r_hUi90yw", "Tek Düşmanım Balıkçı", 409000, 365, 1003], ["FSMxLOdHkXc", "P.E.K.K.A Geri Dönüyor☠️", 216000, 365, 960], ["2wRorDKSMfk", "En İyileri Yendim En Cahile Yenildim", 375000, 365, 1136], ["mfML_UuXhlQ", "Takipçilerle Dürüm Ödüllü Vs", 253000, 365, 967], ["SCZSWSBZI_8", "Sonsuz İksirle Oynamak", 285000, 365, 981], ["zFagn9zuv2A", "Yeni Köstebek Destesi Çıktı", 187000, 365, 880], ["2jBapIYt7r4", "Japonlarla Mücadele Halindeyim", 346000, 365, 1185], ["Z_KxMrOjoZs", "En Sevilen Oyun Modu Geldi", 386000, 365, 942], ["238hfPRJs1E", "Bu Desteyle Her Maç Uzatmalara Gidiyor", 179000, 365, 1076], ["OrUeUpJYfB8", "200Bin Aboneye Özel Japon Terbiye Ettim", 459000, 365, 1053], ["1xfDrs6r0dk", "Bunu Görmekten Bıktık", 233000, 365, 882], ["pJwSNABA6hk", "Şerefsiz Eşleştirme Sistemi", 393000, 365, 1158], ["U5EL2t1XScM", "Oyunun En Garip Kartı:Altın Şövalye", 205000, 365, 1067], ["GAs81Bq03rs", "Kıvılcıma Bişeyler Olmuş", 275000, 365, 947], ["eTpySyQ0IpY", "Her İksirin En İyi Kartıyla Oynadım", 388000, 365, 1061], ["AxxCBRiVu9w", "Toxic İksir Golemci Başıma Bela Oldu", 590000, 365, 1442], ["kE1XZJ4Lb_0", "Bu Desteye Bayıldım", 235000, 365, 1379], ["FDzkAisbxG4", "Hypnos Cr Destesi Çıkmış!", 320000, 365, 1389], ["SnPDXcVEM1g", "Patron Haydut Durdurulamıyor", 180000, 365, 1069], ["PdICuL86fmg", "Oyunun En Ahlaksız Destesi!", 226000, 365, 830], ["RwiEO1c7h4U", "Sadece Büyülerle Oynamak", 354000, 365, 876], ["ACV055lrcco", "Noob Hindistanlı Başıma Bela Oldu", 290000, 365, 937], ["qBugI8rNqUs", "Supercellden İyi Haber!", 202000, 365, 1038], ["igtBKKpAHCg", "Tipine Göre Kart Seçmek", 437000, 365, 963], ["h5mOXCbZvJY", "Evrimli Cellat O Kadar da Kötü Değilmiş", 181000, 365, 1015], ["bRpz5ByIc0U", "Sezonu Golemle Kapattık☠️", 256000, 365, 1433], ["cehq7PrxGOA", "Şampiyon Haydut Geldi(Dolandırıldım)", 434000, 365, 1271], ["6M029WGdqf4", "Cellat Evrimi Geldi", 167000, 365, 1313], ["mbmN0uOuagk", "En Toxic Japonla Karşılaştım", 534000, 365, 998], ["ZqDlpauWPn4", "8 Evrimle Aynı Destede Oynadım!", 313000, 365, 1168], ["6GfAN3dIr0M", "Lanet Olası Eşleşme Sistemi...", 225000, 365, 1195], ["93eXgTMhyNk", "Clash Royale Çok Değişti", 153000, 365, 1025], ["jIircsBaK_0", "En Adaletli Oyun Modu Geldi", 175000, 365, 825], ["N8oPo-FbHxk", "Kıvılcım Kuleye Vurursa Video Biter", 193000, 365, 1080], ["LEns3t6uCT8", "Yeni Kolsuz Destesi Çıkmış", 162000, 365, 972], ["J8To_nOB3po", "Toxic Emojiler Yasaklandı", 185000, 365, 1095], ["k3jJKi0AoRo", "Bu Kartın Değeri Bilinmiyor!", 131000, 365, 1001], ["d8mfroxTujg", "Japona Anti Olmak!", 226000, 365, 962], ["tT517RiGCkc", "Clash Royalin En Ölümsüz Destesi", 116000, 365, 701], ["db3gsP83xwo", "Siyasetçi Destesiyle Oynadım!(%100Silivri)", 350000, 365, 1087], ["ey6V-aiNCfk", "Kıvılcım Başıma Bela Oldu", 183000, 365, 1171], ["XZk_-QgMhjc", "Yeni Toxic Emoji Geldi", 197000, 365, 931], ["OuAJKFkMcLI", "Yeşil Buton Destemi Belirliyor", 466000, 365, 1108], ["7mP2f9q7NN0", "En Şişman Kartı Seçmek", 540000, 365, 1226], ["SmnFSH7Cmzk", "1Seviye Kartlarla Clash Royali Bitirmek", 142000, 365, 1311], ["E6I8cMYuCQs", "Kulübe Destesiyle Düşük Kupadaki Oyuncuları Trolledim", 144000, 365, 1113], ["zZxeTTFdV6Y", "%100 Yetenek Destesiyle Oynadım", 176000, 365, 1114], ["jLUMNtdavuw", "Dükkandaki Kartlar Destemi Belirledi (%100Şanssızlık)", 251000, 365, 871], ["PRoAWqJx-Ak", "Evrimli Avcı Hile Gibi", 98000, 365, 943], ["c7lcJ9BtvOU", "En Barzo Oyuncularla Karşılaştım", 155000, 365, 1123], ["6zK58VB28Yc", "BU Desteye Bayıldım", 130000, 365, 1152], ["6Q9ch_5pPHY", "Eski Clash Royale Geri Döndü (2017)", 232000, 365, 986], ["PgvlKEgI72w", "En Güçlü Evrimler Bir Destede", 112000, 365, 1098], ["-WqoGneAY0I", "En Çöp Evrim Artık Çok güçlü", 153000, 365, 940], ["pY145Ghlca4", "Bu Oyunu İndirdiğim Güne Lanet Olsun", 251000, 365, 893], ["5j9Ny8rxxJg", "EYVAH! Elektro Dev Geri Döndü", 110000, 365, 992], ["op_ZA5a6Jl0", "Emojilerin Anlamlarını Açıklıyorum", 308000, 365, 1245], ["AtXPs2KhogY", "İksir Golemi Başıma Bela oldu", 309000, 365, 1045], ["-gER_SmkQTA", "Rakiplerimin Destesini Çaldım", 172000, 365, 979], ["aMmbT7dZw5s", "En Çöp Kartı Seçmek", 188000, 365, 1063], ["TeMnkllVVVE", "Oyun Bedava Evrim Dağıtıyor", 91000, 365, 935], ["w7kMtw5kOXY", "Hypnos Cr ile İftara Doğru", 109000, 365, 1265], ["2cKphnIEcPY", "Avcı Evrimi Oyuna Geldi", 100000, 365, 995], ["C0oO8Zg7_u8", "Oyunun En Toxic Oyuncusuyla Karşılaştım", 340000, 365, 1224], ["ysa5YEUAXhk", "Japonları Terbiye Ettim", 171000, 365, 894], ["LXm9m4eksyM", "Japon Yemekleriyle Soru Cevap", 804000, 365, 2739], ["SAcg1GBMJzU", "Oyunun En İyi Köprü Spam Destesi", 121000, 365, 897], ["P4iMiLcDdhU", "Bu Desteyi Durduramıyorlar", 92000, 365, 1087], ["C0H283TcSw4", "Böyle Güncellemenin Ta..", 137000, 365, 1268], ["r8EBRJRC5IA", "Takipçimi Tanıyamadım", 87000, 365, 732], ["tbmsGSnwAU8", "1 Günlüğüne Golemci Oldum", 138000, 365, 939], ["QrCbEDXElto", "Az Kalsın Rezil Oluyorduk", 153000, 365, 1328], ["269MQ0zmrqU", "Yeni Toksik Emoji Geldi", 134000, 365, 1496], ["940yiCLJayE", "Düşmanın Balıkçısı Başıma Bela Oldu", 255000, 365, 1570], ["xAznoevJ3w0", "Oyunun En Torpilli Destesi", 217000, 365, 1417], ["3JVje0RAB7Q", "Yapay Zekadan Deste İstedim Kavga Çıktı", 480000, 365, 1471], ["N_h2RjLhxXg", "Beni Oyuna Başlatan kuzenimle 2Vs2(sesli)", 553000, 365, 1667], ["GpAshcVv3N8", "Kartlarım Taraf Değiştirip Bana Saldırıyor", 98000, 365, 1073], ["SASJOJYHzX4", "Bu Deste Çok Güçlü", 74000, 365, 750], ["oSoeUpNfS-g", "Oyunun En Toksik Destesi", 196000, 365, 1094], ["0UIt-Y0uUMg", "En Sevmediğim Emojiyi Aldım", 126000, 365, 1227], ["zxZVlhCgXXo", "En Sevilen Mod Geri Geldi", 96000, 365, 1282], ["6Ylm2oJRSSY", "En Sevdiğim Evrim Geri Döndü", 134000, 365, 1069], ["klBug4ini50", "Bu Ne Supercell?", 404000, 365, 1338], ["uYG2nTNAaYc", "Evrimli Oduncunun En Güçlü Destesi", 70000, 365, 798], ["VswNHENYDUk", "Japonlara Bela Oldum", 122000, 365, 965], ["p8bp9eWgwNk", "Hile Gibi Taktik:Ölümsüz Oduncu", 174000, 365, 1280], ["oHfwhOyChoY", "Oyunun En Çöp Kartı Geldi", 163000, 365, 1156], ["HqEcBQYaQF4", "Süper Kartlar Oyuna Geldi", 482000, 365, 1233], ["DGEE3kfztC8", "Oyunun En Ağır Destesini Yaptım(7.1)", 275000, 365, 884], ["_EPE4DeWx-s", "Oyunun En Güçlü Evrimi Oduncu Geldi", 89000, 365, 888], ["gpu9JOphQsQ", "Oyunun En Büyük Güncellemesi geliyor", 75000, 365, 1130], ["mSA1F7k7o7g", "Metaya Anti Olmak!", 92000, 365, 844], ["A6nsNyYsu50", "Yeni Düşmanım:Avcı", 106000, 365, 1015], ["eFNOUGPp0es", "Bu Videoda Başıma Gelmeyen Kalmadı", 124000, 365, 1097], ["5zjXh60EAsM", "Çinli Prensese Aşık oldum", 206000, 365, 1304], ["dsPw-6_GGIc", "Avcıyla Ana Kuleye Tek Attım(Hile?)", 163000, 365, 865], ["4rXQkJUJIu8", "Oyunun En Ucuz Destesini Aldım", 107000, 365, 951], ["8aTSNV2VOCo", "Takipçim Destemi Belirledi!", 130000, 365, 1154], ["GCODylTdvi4", "Küreselin En Barzo Golem Destesini Kopyaladım", 118000, 365, 1008], ["ocO-RVSr3EU", "Her şey Bittiği Anda Kıvılcım...", 274000, 365, 1436], ["2-7gKK-HF0E", "Yeşil Buton Başıma Bela Oldu", 719000, 365, 1277], ["3LOlq5NmzXE", "Aslan Evladım Bombacı Maçı Taşıyor", 181000, 365, 1148], ["SMz141L6ER0", "Yeteneksiz Arap Başıma Bela Oldu", 276000, 365, 1353], ["Kxkmh0QUwjs", "X Yayı İle Araplardan İntikam Aldım", 125000, 365, 1074], ["eme5TYxcasI", "Balıkçı Yine Maçı Sattı", 362000, 365, 1289], ["UFyhlsEfpuU", "En Sevdiğim Kart Bombacıya Veda!", 85000, 365, 1088], ["NM59QFeV4UE", "İlk Defa Bu Kartı Oynadım", 110000, 365, 1190], ["6rGKbU5gCgE", "Eyvah! Elektro Dev Geri Döndü", 100000, 365, 1241], ["LQbkiogFlZo", "En Sevdiğim Deste", 110000, 365, 1436], ["OYVAhk6Vpx0", "Oyunun En Noob Oyuncusuyla Karşılaştım", 166000, 365, 1124], ["rfDE3HtwSsw", "Düşmanlarımın Destesini Kopyalıyorum", 94000, 365, 985], ["eON8aIpNp68", "Oyunun En İyi Logbait Destesi Çıktı", 78000, 365, 881], ["WMJH08rYnlA", "En Az Kullandığım Kartlar Bir Destede", 105000, 365, 967], ["lObbXrhLj5A", "İksir Golemi Oynayan Takipçimle Karşılaştım", 309000, 365, 1072], ["2GMPKRImwtA", "Artık En Sevdiğim Kart Dart Goblini", 176000, 365, 1056], ["XjxbUep8aCg", "Yeni Kart Rün Devi Oyuna Geldi", 77000, 365, 929], ["Gzvr29ZW_9E", "Yok Artık!1 Canla Kazandım", 153000, 365, 735], ["haC6afQ-iYs", "Yeni Dart Goblini Evrimi Geldi", 136000, 365, 982], ["CrYL55AZ1Bg", "Böyle Eşleştirme Sisteminin...", 185000, 365, 1050], ["_xVNwduRZCg", "Oyunun En Yavaş Kartı Başıma Bela Oldu", 99000, 365, 887], ["mtnBs2x3f1U", "Balıkçıya Büyük Nerf Geliyor", 124000, 365, 1219], ["LhnyX4VQYMQ", "Clash Royali Bitirmek!", 62000, 365, 767], ["nyuJwMEe0vA", "Bu Muhafız Destesi Çok Güçlü", 94000, 365, 1238], ["jX7dIdPaeWE", "Yılbaşına Özel Harem Kurdum", 112000, 365, 1023], ["o0fzjFIQ5Ac", "Yeni Düşmanım*Mega Şövalye*", 135000, 365, 1101], ["_aNOTWslsUE", "İnanılmaz Bir Hata Yaptım!", 94000, 365, 901], ["X91A9but0Qs", "Eyvah! En Sevdiğim Kart Nerf Yemiş", 122000, 365, 1400], ["N_x1lo53z38", "Metanın En Hızlı Logbait Destesini Maxladım", 93000, 365, 1160], ["pYvfMkNiB2s", "Bu Kule Birliğini Sakın Kullanmayın", 73000, 365, 1059], ["o1eiQwN96GU", "En Nefret Ettiğim Desteyle Oynuyoruz", 364000, 365, 846], ["8p52wPRxbGU", "Zenginlere Anti Olmak!", 134000, 365, 831], ["JZ086UT7IzY", "Yeni Gariban Kule Birliğiyle Oynadım", 63000, 365, 1018], ["EsAO4ALsyNw", "CRL 20 Galibiyet İçin En İyi Deste", 68000, 365, 1139], ["HdRvkqFT3oA", "Kıvılcım Kullandığıma Pişman oldum", 180000, 365, 1184], ["4P3HrXyq0kU", "CRL Turnuvası Geldi", 108000, 365, 1074], ["xRFs3aXr6BE", "Yeni Gelen Kule Birliğini Bedavaya Maxladım", 78000, 365, 1133], ["7XWZ99S0sq4", "1 Günlüğüne Golemci Oldum", 64000, 365, 842], ["HrWLffYwuhM", "Yeni*Aşçı*Kule Birliği Başıma Bela Oldu", 71000, 365, 938], ["FwTrxyi0WXI", "Supercell Destemi Belirliyor", 276000, 365, 1023], ["yEKerooU0xc", "En Nefret Ettiğim Kart", 73000, 365, 1063], ["dpfB2XtruX4", "En Çöp Evrim Çok Güçlendi", 64000, 365, 858], ["Zo8PovFOJWw", "Eyvah! Yanlış Adamdan İntikam Almışım", 186000, 365, 1050], ["M6m-kJvkcDg", "Suriye Destesiyle Oynamak!", 121000, 365, 1055], ["Q8BRl0dErMo", "Yılların Ölümsüz Logbait Destesi!", 100000, 365, 981], ["Du4fcD2RMEM", "Toxic Japonu Terbiye Ettim", 226000, 365, 1197], ["gl8e7qujQqs", "Sonunda Aradığım Desteyi Buldum", 61000, 365, 1198], ["yLhLufEriDE", "Destemi Gören Maçı Bırakıyor!", 154000, 365, 1087], ["aYoB0KRl5_s", "En Sevdiğim Kartlar Bir destede", 58000, 365, 865], ["IrUR7f8wFDg", "Asla Yarı yolda bırakmayan kart:Bombacı", 89000, 365, 1101], ["f-xSE0uttjE", "Oyun Yine Kahpelik Yaptı", 230000, 365, 1168], ["UgQratBv2AQ", "En Kötü Kartları Seçmek!", 209000, 365, 1137], ["RQ9uaSISVOE", "Türk Usulü Kupa Kasıyoruz!", 94000, 365, 1226], ["cP1fPZKCWPg", "Yeni Dev Kartopu Evrimi Oyuna Geldi", 67000, 365, 1154], ["_6Jy9cJxeek", "Bu Oyunu İndirdiğim Güne Lanet Olsun", 461000, 365, 1474], ["yHHFeFIrZ-8", "Toxic Veledi Ağlattım", 298000, 365, 941], ["HuldIPsgXFo", "En Barzo Mega Şövalye Destesini Aldım", 106000, 365, 1364], ["d-QNsYIqW9E", "Kuzenle Yargı Dağıttık(2v2)", 120000, 365, 1480], ["HtjxQv38utQ", "Yeni Çıkan Mezarlık Destesini Maxladım", 56000, 365, 991], ["LRfD-k0A0yc", "Kolsuz Japonla Takım Arkadaşı Oldum(2v2Kupa)", 102000, 365, 1008], ["xyqgx6S_n2k", "Düşmanım Bana Aşık Oldu!", 57000, 365, 893], ["pZx_uzXgCkI", "Sonunda! Mega Çekilişli Oyun Modu Geldi", 349000, 365, 2023], ["YxYcEHfFTKQ", "Pekka Gitti Mega Şövalye Geldi", 57000, 365, 1105], ["9hKyZh9t3bs", "Kıvılcım Maçı Sattı", 229000, 365, 1226], ["alBz2XQycwo", "Toxic Yayıncıyı Kendi Yayınında Rezil Ettim", 360000, 365, 1248], ["Hk8EK72j3Bg", "Yeni Gelen Top Evrimini Bedavaya Aldım", 58000, 365, 912], ["iPp4YNHDQdM", "En Sinir Olduğum Video!", 381000, 365, 772], ["YGnsnR0Po0s", "Metehan Destesiyle Oynamak!", 191000, 365, 2116], ["Pe0ZI6lyfi4", "İmdaat! Oyun Peşimi Bırakmıyor", 189000, 365, 1401], ["LoZvRt8SkG4", "Bilim Adamı Destesiyle Oynamak!", 123000, 365, 1378], ["f4VK7vwivi4", "Oyun Kaybetmem İçin Hile Yaptı!", 252000, 365, 1163], ["602tKKZlq2A", "Beni Oyuna Başlatan Kuzenimle 2vs2 Kupa Modu Girdik", 234000, 365, 1696], ["wi3_59TAjko", "En Nefret Ettiğim Kartlar Bir Destede", 656000, 365, 1487], ["A9pH-4ivMOk", "1.Arena Kartlarıyla Kupa Kasmak!", 52000, 365, 1028], ["2dFfD8EUBIc", "Oyunun En Güçlü Logbait Destesini Maxladım", 53000, 365, 959], ["VU-OdfgN93Q", "Önemli Duyuru! 100Bin Plaketini Alamadık", 75000, 365, 908], ["0xhSh4decN4", "Bu Desteyi Oynamaktan Utanıyorum!!", 257000, 365, 1014], ["_mvoNInu2yY", "Supercell Destemi Belirliyor!", 357000, 365, 1252], ["nRSU71Xd4is", "Bu Evrimi Satın Aldığım Güne Lanet Olsun", 71000, 365, 1244], ["tE-e_M8FvWY", "İLK CRİTİCAL OPS Videom!", 191000, 365, 1422], ["bo6Mke4VjXw", "Uzun Zamandan Sonra Kıvılcımla Oynadım!😡(Vurmuyor)", 115000, 365, 1244], ["wtnTX9wX7PU", "Yeni Silahşör Evrimi Geldi", 55000, 365, 1198], ["I86075hihSY", "Japonlarla Barıştık!!", 67000, 365, 1222], ["OUgRDUkzK70", "Antilere Rağmen Tekrardan Küresele Girdim", 111000, 365, 1143], ["I3Ib7TYwD84", "Küreselin En İyi Golemcisiyle Karşılaştım", 290000, 365, 1607], ["jktAlmllBcg", "Tüm Destelere Anti Yeni Deste Çıktı", 185000, 365, 2059], ["ejmVyvfp47I", "Sonunda! Küresele Girdim", 114000, 365, 1389], ["YaUbY4tKvMk", "Siyasetçi Destesiyle Oynadım!(En Riskli Video)", 128000, 365, 1269], ["sa4DxZsjykU", "Arap Bana Toxiclik Yaptı!", 124000, 365, 1175], ["mgBySzvn27Y", "En Adaletli Oyun Modu Geldi", 146000, 365, 1488], ["NY0_G1l9nk0", "Yeni Telefonla İlk Clash Royale Videosu!", 49000, 365, 816], ["xbzfFXdJunA", "Balıkçı Maçı Sattı...", 215000, 365, 1054], ["CFXY1Wc7HTU", "Küreselin En İyi Oyuncularıyla Karşılaştım", 151000, 365, 1762], ["xIjEHkUOL8A", "Oyunun En Güçlü Pekka Destesini Maxladım", 34000, 365, 777], ["GpPHdS6rlfE", "Yeni Şampiyon Kartı Max Level Yaptım!", 41000, 365, 1156], ["ZzMaxxXmvNk", "Mega Şövalye Sezonu Başlıyor!", 40000, 365, 1139], ["LRLtWAuFisA", "Clash Royale Hesabımı Maxlıyorum", 117000, 365, 1424], ["ZCumyLrfn8I", "Nooblar Bu Desteyi Savunamıyor!", 44000, 365, 958], ["FNBLAL04cqM", "En Eğlenceli Oyun Modu Geldi!", 67000, 365, 861], ["Xnpc-tpJWuA", "Kabile Destesiyle Clash Royale Oynamak!", 75000, 365, 1185], ["jOcRNktF1VI", "Oyun Benimle Uğraşıyor...", 170000, 365, 1287], ["ZTXpz9ZWShI", "Küreselin En Ağır Destesiyle Oynadım", 41000, 365, 997], ["YB0LQuaZg-Q", "Oyunun En Hızlı Yetenek Destesi Çıktı!(Yeni)", 43000, 365, 1086], ["P-qyZsp3V9U", "X Yayı Oynarken Başıma Gelenler...", 68000, 365, 1074], ["DqkLNW8hHJc", "Göktürk Destesiyle Oyunu Fethediyoruz!", 89000, 365, 1991], ["9RAikBJWyHI", "Kıvılcım Oynamayalı Uzun zaman Olmuştu!", 59000, 365, 987], ["LT4F2Q1udwA", "Clash Royale Çok Değişti! (Yeni Güncelleme)", 36000, 365, 1088], ["IMka_KDlTJU", "Yeni Şampiyon Kart Geldi!", 44000, 365, 1069], ["RTdNgeLDuno", "Yeni Elektro Ejderha Evrimi Oyuna geldi", 77000, 365, 1270], ["ZGOcmCN1-eE", "Toxic Hindistanlı Başıma Bela Oldu", 220000, 365, 1753], ["zQ5W0enuBes", "CR'de Bir İlk! Oyunun En Sevilmeyen Modu Kalkıyor", 41000, 365, 967], ["4EG5cMafDRk", "Dereceli Küresel Oyuncularıyla Kapıştım!", 49000, 365, 1192], ["8SRM6PC0Mh4", "Oyunun En Büyük Güncellemesi Geldi", 55000, 365, 1548], ["_4wfJ0tNT68", "En Tilt Olduğum Video!", 392000, 365, 1621], ["NI5nKPZYads", "Yeni Kart Geldi:Süper Şövalye", 41000, 365, 658], ["92kwF-4mhJ4", "Küreselin En Hızlı Destesiyle Oynadım", 44000, 365, 932], ["0DnfN4KP5hU", "Küreselde Sahte *Hypnos CR* Çıkmış!", 402000, 365, 2110], ["O7Elb4mcb04", "Paraya Doymayan Oyun:Clash Royale", 59000, 365, 895], ["IcLPrbQaN8Q", "Mega Şövalye Evrimi Başıma Bela oldu", 73000, 365, 1261], ["4beCgOYt5F0", "Oyunun En Garip Modu Geldi!", 101000, 365, 975], ["Ye0A4jY1Cwg", "Neden Evrimli Mega Şövalye Oynamamalısınız?", 118000, 365, 1742], ["tHRJw5eXUuM", "100Bin Aboneye Özel *Son* Soru Cevap", 228000, 365, 2878], ["Ww5vOyBhPfw", "Beni En Çok Zorlayan Japonla Karşılaştım!", 57000, 365, 1259], ["nqeq-YrrTSg", "Yabancı Youtuberların Videosunu Kopyaladım", 72000, 365, 1613], ["N84vmRbZoiQ", "Oyunun En Kötü Sezonu Gelmiş!", 57000, 365, 1298], ["IElLdajFbjw", "Oyunun En İyi P.E.K.K.A Destesi Çıktı", 52000, 365, 1586], ["vxZuTMHbpN4", "En Yeteneksiz Pekka Destesi Çıktı!", 50000, 365, 1040], ["zjVYOi9ghxg", "Oyun Büyük Ödüller Dağıtıyor", 37000, 365, 1044], ["hlccczTErpk", "Eyvah! Dolandırıldım", 98000, 365, 1258], ["JDFcg988-hA", "Takipçilerimin Destesiyle Oynadım!", 60000, 365, 1296], ["8PK0vVNq_Xs", "Oyunun En Güçlü Evrimi Geldi:Mega Şövalye", 115000, 365, 1541], ["vrLVkjEA1RY", "En İyi Japonun Destesini Kopyaladım", 350000, 365, 1558], ["dRbSaFZ-bFM", "Üst Üste 20 Maç Kazandım!?", 38000, 365, 941], ["VC2O7vBwc0s", "En İyi Balıkçı Destesi!", 53000, 365, 1312], ["5i3B36y93wI", "Evrimli Havan Metayı Sallıyor!!", 49000, 365, 1206], ["l17aYs7N6II", "Altın Sandıklar Destemi Belirledi!", 88000, 365, 1450], ["eCwbZ1zlPa8", "Oyunun En İyi Flaması Geldi", 36000, 365, 842], ["8uOnsoWd8VY", "Oyunun En Hızlı Maç Kazandıran Destesi", 39000, 365, 1040], ["aNLOKCVxiOg", "%100 Yetenek Destesiyle Oynadım", 45000, 365, 1312], ["jiCOTNSaaV8", "Oyuna İlk Başladığım Desteyle Oynadım🥲", 114000, 365, 1650], ["nfS529pDBlo", "%100 Savunma Destesiyle Oynadım!", 59000, 365, 1082], ["Dd-kOjX7Q5o", "Oyunun En İyi P.E.K.K.A Destesini Buldum", 51000, 365, 1270], ["DWFDP6ISXII", "Evrimli Pekka Oyuna Geldi!", 57000, 365, 1147], ["iU5JfHmfsgA", "Sezonu Pekkayla Kapatıyoruz!", 40000, 365, 1359], ["0VU5e8Iau3A", "Oyunun En Kötü Flamasıyla Oynadım", 93000, 365, 1494], ["hTMZ0NCkoEo", "Oyun Bedava Evrim Dağıtıyor", 70000, 365, 1661], ["XNUk3w4S820", "Dereceli Küresel Oyuncularıyla Karşılaştım", 76000, 365, 1331], ["iNPHFcUBcO4", "8 Evrim Bölmesi Oyuna geldi!", 91000, 365, 1407], ["l7lBYHqyqiI", "En Kötü Süper Kartı Seçmek!", 176000, 365, 1003], ["lPzntoYcydI", "Oyunun En Yavaş Kartını maxladım", 93000, 365, 1429], ["0iSe7Kkwt_4", "Balıkçı Maçı Satarsa Video Biter", 159000, 365, 1684], ["hpQydYOFbeA", "Kıvılcımdan Kurtuldum Artık!", 44000, 365, 1069], ["O5TnMz7RiJ0", "Süper Kartlar Oyuna Geldi", 189000, 365, 1335], ["vLqjW06yIi8", "Eski Clash Royali Oynamak!", 58000, 365, 1446], ["Q0fMCV_gfLw", "Oyunun En Toxic Emojisini Aldım!", 123000, 365, 1433], ["1v19TtVCsmo", "Bu Oyunu Neden Oynamamalısınız?", 122000, 365, 964], ["GjWwip-To3I", "Gariban Destesiyle Oynadım!", 78000, 365, 1339], ["VqB-6Yxb6HI", "Oyunun En Sevilmeyen Destesi", 50000, 365, 1178], ["LgwWexjFgWg", "Japonların Videosunu Çaldım!", 76000, 365, 897], ["D273sI2aN4w", "Böyle Oyununda Böyle Eşleştirme Sistemininde...", 148000, 365, 1478], ["Omc0-Hr2MsQ", "Her İksirin En Kötü Kartıyla Oynadım", 244000, 365, 1261], ["REsGt7-eqOk", "Süpercellden Şaka Gibi Ödül¿", 110000, 365, 1236], ["4mZi72m3t_Y", "Düşmanların Destesini Kopyaladım", 120000, 730, 1346], ["l3H6LvjB9Cs", "En Nefret Ettiğim Desteyle Oynadım", 63000, 730, 1068], ["K5lwvgIHRFI", "Nerf Miner😂", 50000, 730, 1002], ["rwXVzfa_Rys", "Elveda Evrimli Köstebek", 38000, 730, 1088], ["Swzjq_EdF2M", "Her İksirin En İyi Kartıyla Oynadım", 53000, 730, 1067], ["TU6hIw2YGaU", "Herkes Bu Desteyi Oynayacak!", 42000, 730, 1122], ["8I6qwe5d-MM", "Oyunun Açığını Buldum!", 243000, 730, 1110], ["GRG37XQDvic", "Oyunun En Güçlü Evrimi Geldi!", 84000, 730, 1172], ["ScpehcPg_i4", "Japonların Klanına Sızdım!", 398000, 730, 1454], ["vMrxcU0y8pE", "Hayatımın Maçını Oynadım", 94000, 730, 1529], ["mhm0yqyltpw", "Kıvılcım Vurursa Video Biter!(En Riskli Video)", 386000, 730, 1687], ["CaIwXJgEgvg", "Yeni Ender Kartı Maxlayıp Oynadım!", 47000, 730, 1150], ["HQuih-0mA8A", "Balıkçıya Haksızlık mı Ettik?", 197000, 730, 1565], ["12QgCoNZqz8", "Balıkçı *Yine* Maçı Sattı", 233000, 730, 1229], ["qwqBQwr8h-0", "Yeni Kolsuz Destesi Çıktı!!", 52000, 730, 1161], ["OhoLXkp2jYk", "Oyunun En Büyük Hediyesi Geldi!", 52000, 730, 1188], ["s3pmBZZi0M8", "Hypnos Vs Japonlar", 110000, 730, 1275], ["sD5KvHLZb6A", "Oyunun En Güçlü Destesini Seçiyoruz", 50000, 730, 1339], ["9I6IzYQC5CU", "Bu Videoda Başıma Gelmeyen kalmadı", 416000, 730, 2154], ["HVJgi73qY24", "Siyasetçi Destesiyle Oynadım!!", 109000, 730, 1410], ["kv5OYA4nk0I", "Oyunun En Ağır Barzo Destesini Yaptım", 136000, 730, 1280], ["8emehDSh9LY", "Oyunun En Hızlı Meta Destesini Maxladım!", 36000, 730, 1000], ["6-ayGQt-kxI", "Yılların Değiştiremediği Logbait Destesi!", 40000, 730, 1191], ["DZ_E1Vb-y3I", "Oyunun En İyi Destesini Maxladım", 36000, 730, 949], ["LeS6Wi2SoxI", "Clash Royale Ama 1 Gün Boyunca Küfür yasak", 29000, 730, 751], ["ppWFgk8TK2Q", "Yeni Köstebek Evrimini Bedavaya Aldım", 41000, 730, 1069], ["vgWPThrVg5w", "İlk Defa Evrimli Barbar Oynadım", 33000, 730, 889], ["UqzawofGlv8", "Nooblar Bu Desteyi Kullanıyor!", 96000, 730, 1135], ["nthbFJp1T7Q", "1Günlüğüne Golemci Oldum", 60000, 730, 1287], ["0Rf8enkNL_Q", "Rakiplerin Destesini Çalıyoruz!", 38000, 730, 877], ["v5i1khuLCng", "Oyunun En Sinir Bozan Hamlesi(Oduncu + Balon)🙂", 76000, 730, 928], ["XFS-d_MW4Vs", "Oyunun En Güçlü Büyüsünü Sonunda Maxladım", 41000, 730, 954], ["pEcU03xrmZo", "Oyuna Para Yatırmak Zorunda Kaldım", 38000, 730, 852], ["Pjhn4EoCn1E", "%0 Kullanım Oranı olan kartla oynamak!", 52000, 730, 1047], ["nciF3Lh0ND0", "Oynamaktan En Korktuğum Deste:X yayı", 69000, 730, 958], ["jNHaf3faZiA", "Değeri Bilinmeyen Evrim:Valkür", 41000, 730, 1147], ["6vUdZ9zbzRg", "Bu Tuzağa Düşmeyin!", 46000, 730, 1048], ["dGhqs5OTwns", "Sürekli Evrimli Dev Goblin Atarak Rakibi Çıldırtmak😂", 36000, 730, 789], ["p7_N4Pl1z-o", "2.6 Ama Köstebek!", 39000, 730, 888], ["kADcYhplKXM", "Yeni Dev Goblin Evrimi Oyuna geldi!", 59000, 730, 1008], ["zzQNraEddTE", "Son Kez Mega Şövalye İle Oynadım!", 56000, 730, 1252], ["oG9bJgJ0V0g", "İmkansız Maçı Öyle Bir Çevirdim Ki!", 34000, 730, 669], ["D_X98FVDvV8", "Dev Gobline Evrim Geliyormuş😂", 43000, 730, 990], ["bsoQO8ft_ao", "Küreseldeki Noob İksir Golemciyi Terbiye Ettim!", 115000, 730, 737], ["a81z0-823HQ", "Art Arda Maç Kaybettiğimiz Fail Anlar!", 175000, 730, 1424], ["cM4zFxZmk3Q", "En Adaletli Oyun Modu Geldi:Mega Çekiliş", 140000, 730, 1218], ["AJ7fvrMIlBM", "Sıralamaya Doğru Kasmaya Çalışıyoruz!", 41000, 730, 883], ["bYlnYpNjgLs", "Dünyanın En Adaletsiz Oyunu:Clash Royale", 117000, 730, 891], ["TjNhtxjttWE", "Yeter Artık Supercell Yeteeer!🤬", 71000, 730, 941], ["X30ZqyO_XyQ", "Bu Kart Resmen Hile Gibi Olmuş!", 39000, 730, 930], ["iC_DysD67kA", "Oyunun *En* Büyük Güncellemesi Geldi", 49000, 730, 1128], ["a5jXsWx1YG4", "Türk Klanlara Girdim Kışkırtma Yapıp Vs İstedim! (Sinirden Çıldırdılar)", 750000, 730, 1552], ["5eAGOWloKVM", "Küreseldeki Kız oyuncunun Destesini çaldım!", 43000, 730, 1032], ["yc13noW_v0w", "Bu Desteyle Hep Biz Antiyiz!", 33000, 730, 980], ["5iithdtWEZw", "Yeni Goblin Kraliçe Oyuna Geliyor!", 43000, 730, 966], ["PdeNK8Y24jA", "Dünya Birincisinin Destesini Kopyaladım", 175000, 730, 1279], ["dpDBbnpO3qE", "Kraliyet Devi Metaya Girdi!", 84000, 730, 1335], ["KrZMtXDSVgs", "Dünyanın En İyi Oyuncusu Bunu Öneriyor!", 36000, 730, 805], ["yOCvBB4JDRM", "Oyunun En Saygı Duyulan Destesi!!", 119000, 730, 1109], ["QR6hJfhS6ps", "Clash Royale Tamamen Değişiyor!!", 44000, 730, 1143], ["UNrnwcqWn0Y", "1 Gün Boyunca Toksik Oyuncu Oldum!", 211000, 730, 1238], ["eH1mMsSZJts", "Yeter Artık😡Banım Açıldı Tekrar Ban Yedim!!", 99000, 730, 1185], ["l0s-VpaVGC0", "Maxlaması En Kolay Deste!", 41000, 730, 1123], ["YIrL4rQMIHU", "En Nefret Ettiğim Kartlar Bir Destede!", 162000, 730, 1060], ["5vVruvuPEV8", "İlk Defa Rakiplere Biz Antiyiz", 48000, 730, 830], ["DQADmIBoTXM", "Sezon Sonu Neler Yaşandı?", 61000, 730, 969], ["GKMo_JBRA44", "Evrimli Goblin Fıçısı Oyuna geldi", 62000, 730, 1159], ["JMODjNl-n8Q", "Clash Royale'den Ban yedim!", 194000, 730, 1366], ["_OO5rZk50bA", "Beni Yenmeye Çalışan Japonu Terbiye Ettim", 192000, 730, 1125], ["sKePkTTgcQo", "Yeni Evrimli Goblin Fıçısı Oyuna Geliyor", 36000, 730, 913], ["PQwsh4OUL5Q", "Sezonun Son Kıvılcım Videosu", 55000, 730, 912], ["x6SZfwZjJjw", "En İmkansız Eşleşmeleri Bile Bu Taktikle Yeneceksiniz!", 41000, 730, 973], ["lU42M-LT2e0", "Maç Kazandıkça Eşleşme Zorlaşıyor!", 52000, 730, 815], ["ZEnsYVso6qA", "Kupa Maçında Ünlü Yayıncıyla Karşılaştım", 38000, 730, 827], ["JsFm_MM8IJ0", "Oyunun En Rezil Destesi Başıma Bela oldu!", 124000, 730, 1125], ["FeTRaHCk5os", "Sıralamaya Doğru Kasıyoruz!", 40000, 730, 879], ["zVl0ARjTrZM", "Suriyeli Destesiyle Oynadım", 61000, 730, 888], ["AuSwjePqBj4", "Oyunun En Güçlü Evrimi: Büyücü", 40000, 730, 911], ["MyiI1sL4c8g", "Para Yatırmadan Nihai Şampiyon Olunur mu ?", 89000, 730, 1278], ["rJzLyalHbLI", "Supercel Bedava Evrim Dağıtıyor", 41000, 730, 895], ["oA801ilG1rI", "Oyunun En Güçlü İkilisi Dev+Balon", 49000, 730, 1136], ["yS3xMzP9bX4", "İmkansız Eşleşmelere Karşı Oynuyoruz(%100 Anti)", 74000, 730, 1275], ["z0HRVIPDNPs", "Oyunun En Çok Kazandıran Destesi!", 60000, 730, 1005], ["KuPdDIpe6oc", "Yeni Güncellemeden Sonra En İyi Desteler", 43000, 730, 1096], ["klyPRNmas3Y", "Yeni Yetenek Destesi Belli Oldu!", 42000, 730, 825], ["fnLrLjwVoq4", "Yeni Büyüyü Bedavaya Maxladım", 43000, 730, 1248], ["Vow7fBce_X8", "Rakibin Balıkçısı Maçı Sattı 😂", 62000, 730, 925], ["Z6VqkiG2bKk", "Şaka Gibi! Evrimli Büyücü Nerf Yemiş", 49000, 730, 1001], ["8QTkBTV_2jU", "Sadece Havadan Giden Kartlarla Oynamak", 65000, 730, 1046], ["GKhPJ6nhyVQ", "Oyunun Yeni Toksik Emojisi Geldi", 115000, 730, 1221], ["N6HeUpCw-RA", "1 Gün Boyunca Kibar Oyuncu Olmak!(Çok Zorlandım)", 43000, 730, 863], ["EFXiHgF8l8U", "Alt Kupalardan Kurtulmak İçin İlaç Gibi Deste", 41000, 730, 824], ["i_Ozqn1bqC8", "Oyunun En Güçlü Büyüsü Geldi:Boşluk", 43000, 730, 915], ["sv3GEJ_qPUI", "Yeni Büyücü Evrimi Oyuna Geldi", 56000, 730, 1215], ["RBd6OG26bQs", "Lanetli Desteyle Sezonu Kapatıyoruz!", 78000, 730, 1356], ["O_Psm818euQ", "Küreselin En Barzo Destesi!", 65000, 730, 1276], ["mrVHLPaefTY", "Küreselin En Noob Pekkacısıyla Karşılaştım!", 146000, 730, 1342], ["Teg6BAVGYUw", "Oyunun En Aptal Kartı Başıma Bela Oldu", 246000, 730, 967], ["lJCkKifmL0k", "İmkansız Eşleşmelere Karşı Oynuyoruz!(%100Anti)", 316000, 730, 1376], ["Kb3BkMqZj8Q", "Düşmana Zarar Vermeyen Kart: Kıvılcım", 125000, 730, 872], ["FdHrLM0qeWA", "Sonunda! Küreselde Sıralamaya Girdim", 120000, 730, 1298], ["qymTNqnCxB4", "Oyunun En Büyük Güncellemesi Geliyor!", 42000, 730, 1179], ["7TP3Yw45Mno", "Oyunu Kandırmaya Çalıştım!", 43000, 730, 724], ["_yM_OpVppQE", "Sakince Küresele Doğru Kasıyoruz", 51000, 730, 902], ["JjsNQdbqOfY", "Oyunun Eşleştirme Sistemini İfşaladım!", 99000, 730, 1015], ["TQVPMaIlj-0", "En Büyük Düşmanım:Kıvılcım", 74000, 730, 892], ["FQ3pM4jSezk", "En Zor Eşleşmeleri Yendim! (%100Anti)", 116000, 730, 1159], ["oDwccwJ-FXA", "Oyunu Bırakma Sebebim Bu Olacak😡", 164000, 730, 1291], ["SAaaA74pkok", "Artistlik Yapan Rakibe 3 Taç Çektim!", 114000, 730, 838], ["qT29c6WJ3uE", "Küreselin En Güçlü Destesini Maxladım!", 43000, 730, 823], ["yqbLiEx6nBg", "Dosta Korku Düşmana Güven Veren Kart:Balıkçı", 80000, 730, 667], ["ajXH7sapaNo", "1 Gün Boyunca Japon Olmak!", 88000, 730, 922], ["LGnjMAvnGis", "Merak Ettiğiniz Herşeyi Cevaplıyorum", 157000, 730, 1444], ["dlSkzcPf5ds", "Yeni Efsaneviyi Maxlamak Zorunda Kaldım", 47000, 730, 847], ["C5yBEpU87JQ", "Oyunun En Hızlı Destesini Maxladım", 49000, 730, 923], ["gQhUOW2l_rQ", "Düşük Level Kartlarla Max Oyuncuları Yenebilir miyiz?", 46000, 730, 1056], ["7rsYpelLXDw", "Bu Desteyle Yenilmez Olacaksınız", 44000, 730, 965], ["1MgwbU2qhjM", "Kolsuzların Vazgeçilmez Destesi!", 96000, 730, 889], ["lKHIBfLFjgk", "1 Gün Boyunca Toksik Oyuncu Olmak!", 126000, 730, 1060], ["AF8APdtJNQo", "Yıllardır Eskimeyen Deste!", 64000, 730, 1011], ["GJEVfyOmoao", "Oyunun En Çöp Evrimi!(Kullanmayın)", 53000, 730, 869], ["VuArE13eG5E", "Oyunun En Kötü Kartını Seçiyoruz", 56000, 730, 835], ["7bONUetJZ_U", "Dünyanın En Pahalı Oyununu Oynuyoruz!", 48000, 730, 889], ["fX2YUdltM94", "En Nefret Ettiğim Deste!", 44000, 730, 833], ["mQaSHs0F_qk", "Kıvılcıma Haksızlık Mı Ettik?", 97000, 730, 805], ["tP1uC7W_u8g", "Yeni *Efsanevi* Oyuna Geldi", 53000, 730, 1122], ["iSS6Q-zSTn8", "Sezonun Son Günü Neler Oldu?", 58000, 730, 1051], ["mpGtqiiJfl4", "Oyunun En Güçlü Evrimi Geldi:Koçbaşı", 82000, 730, 944], ["h-UPjgNc59M", "Oyuna Son Defa Para Yatırdım!", 64000, 730, 999], ["WZEKGb4ZrKI", "Sadece Elektrikli Kartlarla Maç Kazanmak!", 49000, 730, 863], ["kd2uV7VDSsw", "Oyuna Sövünce Eşleşme Sistemi Düzeldi!", 70000, 730, 1099], ["APWn3VP8sUw", "Küreselin En Çok Kullanılan Destesini Maxladım!", 39000, 730, 692], ["Mscc5A7glQk", "Ucu Ucuna Giden Maçlar (Fail Anlar#1)", 88000, 730, 1158], ["gm2hjlfmzDM", "Kraliyet Turnuvasının En İyi Desteleri!", 39000, 730, 1006], ["eumDVqFhjwI", "Bedavaya Topçu Kulesini Maxladım!", 44000, 730, 842], ["lTb0j32YDzw", "Oyunun En İyi Mega Şovalye Destesi!", 46000, 730, 860], ["aZnENiioNzc", "Bu Videodan Sonra Kıvılcımı Bırakıyorum", 77000, 730, 859], ["DC1qw6iVY4U", "Oyunun Bana Hediyesi Varmış!", 109000, 730, 965], ["W97XH3b-1Ds", "Kıvılcım Varsa Düşmana İhtiyaç Yok!", 92000, 730, 703], ["3NbbA5mFe1E", "Toksiklik Yapan Oyuncuya 3 Taç Çektim!", 58000, 730, 879], ["DKw36gRZg1Y", "Evrimli Çarpma Kıvılcıma Bela Oldu!", 97000, 730, 843], ["AVozoCc5HNg", "Kıvılcımı Özledik Mi?(😡)", 171000, 730, 848], ["DJ3oPpUaGT8", "Maç Satan Kartlarla Nihaiye Çıktım!", 103000, 730, 1287], ["CEZtN_z_ink", "Oyunun En Sinir Bozucu Destesi!", 54000, 730, 861], ["Hq4EipneTOg", "Evrimli Fişekçi Hâlâ Güçlü Mü?", 41000, 730, 655], ["A4isBy0-GRE", "Yeni Çarpma Evrimini Test Ettik", 78000, 730, 1284], ["Xzy8DvuBP_c", "Balıkçı Yine Yaptı Yapacağını...", 176000, 730, 987], ["m7KMISvu2Hc", "Tarihiyle Büyüleyen Şehir Bursa!", 183000, 730, 1048], ["66J5He7xrDg", "Oyunun En Yetenek Gerektiren Destesi!", 104000, 730, 1126], ["KLJYVeLDByQ", "Oyunun En Çöp Evrimi!(Kullanmayın)", 62000, 730, 952], ["bfXgxc9LL1Q", "Alt Kupalardan Kurtulun!(6000-9000)", 77000, 730, 861], ["8AsEVKLjpvs", "%0 Yetenek Gerektiren Kolsuz Destesi", 218000, 730, 1002], ["Qu7cBpoE-8k", "Bu Desteyi Sakın Kullanmayın!", 79000, 730, 1056], ["mNHmaK6DBgE", "Dünya Birincisinin Destesini Kopyaladım!", 51000, 730, 719], ["83e-rJJlOYc", "Yeni Evrimi* Bedavaya* Aldım", 67000, 730, 956], ["uxyOKXF-T8w", "Bu Desteyle Son Videom!", 59000, 730, 956], ["O4FgE-xJD3k", "Toksik Rakibi Rezil Ettim!", 67000, 730, 811], ["3QbtTO6-0iU", "Kıvılcımı Alan Maçı Kazanır!", 51000, 730, 701], ["xjpMpH0sc8A", "Sinirden Telefonu Parçaladım!", 229000, 730, 601], ["WewcK-k8-Ck", "Sonunda Mega Şövalye Metaya Girdi!", 114000, 730, 1216], ["NY_GgvFvOU0", "Yanılmışım! Oyunun En Çöp Efsanevisi:Kıvılcım", 116000, 730, 886], ["lGlkAXnQb9g", "Kıvılcımla Şov Yaptık!(%100 Çalışıyor)", 63000, 730, 696], ["ZgI4CDq8ssE", "Oyunun En Adaletli Modu Geldi!", 73000, 730, 820], ["p1hFMNdxko0", "Oyunun En Toksik Emojisi Geldi!", 168000, 730, 1226], ["QRvt-RFgdp0", "En Büyük Düşmanım: Kıvılcım", 95000, 730, 757], ["9Pi_XDXUnkg", "Toksik Rakibi Rezil Ettim!", 108000, 730, 1052], ["R_PuF7ADXBU", "En Kazık Evrimle Küresele Kasıyoruz!", 60000, 730, 850], ["drIsilYje1g", "Toksik Oyuncu Başıma Bela Oldu!", 77000, 730, 787], ["PUp8epDW7tA", "Kendi Kartlarım Bana Saldırıyor!(Hain Mod)", 75000, 730, 831], ["YIAzbswVMGI", "Dolandırıldım! Yeni Evrim:Duvar Yıkıcılar", 70000, 730, 1026], ["ePD_cWjvYK8", "Aynı anda 2 Hesaptan Sıralamaya Girdim(Efsane Maçlar)", 123000, 730, 1581], ["J0cBJNMEbHk", "Dünyanın En Adaletsiz Oyunu!", 108000, 730, 917], ["8cLQhXwAYz0", "Kıvılcım İlk Defa Böyle Çalıştı!(İnanılmaz)", 61000, 730, 776], ["3JLtGn79Ajo", "Oyunun En İyi Destesini Buldum!", 47000, 730, 705], ["0OHUyHDe_a8", "Beni Yenersen *Elmas* Royalepass Kazanırsın! ( Takipçilerle Vs)", 46000, 730, 943], ["TiVNuZzxzP0", "En Kötü Efsanevi:Balıkçı", 120000, 730, 1008], ["HB-ZUVRGx6Y", "Dünya 1.Nin Destesini Kopyaladım!", 59000, 730, 854], ["tdMGBb1PaRU", "Oyunun En Büyük Güncellemesi Geldi!", 55000, 730, 689], ["X-tQtQKR3NA", "Oyunun En Güçlü Evrimi Geldi!", 51000, 730, 847], ["rv7BaQxeacE", "Bedava Elmas Royalepass Aldım!", 68000, 730, 1126], ["SnvVA32eb_w", "Oyunun En Güçlü Evrimleri Geliyor!", 53000, 730, 1013], ["1bWxIezMCvI", "Kupa Maçında Antileri Ezdim!", 55000, 730, 682], ["HnmTW1cdz9E", "Hayatımın Maçını Oynadım! (Hemde Kıvılcımla)", 90000, 730, 1058], ["FQ0HnP2zyC4", "Oyunun En Hızlı Destesiyle Çıldırttım!(Fıçı İle Doğrudan 3 Taç?)", 50000, 730, 628], ["cffcBPq1S2M", "Türkiye 1.İle Kapıştım!", 67000, 730, 636], ["6-lYyUH4K-g", "Oyunun En Çöp Evrimini Deniyoruz!", 55000, 730, 624], ["gGUbQOTMPbk", "Sakince Küresele Kasıyoruz!", 59000, 730, 760], ["rUbyRFspMMw", "Böyle Oyunun da Böyle Eşleşmeninde...", 199000, 730, 869], ["xQVu5QvhRxU", "Kız Takipçim Bana Meydan Okudu?(Takipçilerle Vs)", 76000, 730, 826], ["xUH8Mp4Wa0w", "1 Günlüğüne Toxic Oyuncu Olmak!(Rakibi Sinirlendiriyoruz)", 62000, 730, 902], ["VeMgwsCErLU", "Merak Ettiklerinizi Cevaplıyorum!(Youtuberler ile Vs?)", 121000, 730, 1604], ["H6nDLZtGDNg", "En Noob Pekkacı Karşıma Geldi!", 90000, 730, 922], ["UP9yfTHOoCE", "Sadece Ucuz Kartları Seçmek!", 103000, 730, 948], ["Cj9ewDs6doA", "Oyunun En İyi Sandığını Ücretsiz Aldım!(%100Beleş)", 78000, 730, 893], ["e9MGnuxXDmo", "En Anti Rakiplere Karşı Kupa Maçları!", 72000, 730, 691], ["m9FO8Derh_4", "Osmanlı Destesiyle Oyunu Fethediyoruz!", 92000, 730, 861], ["whF_4TXunbE", "Anti Küresel Oyuncularını Ezdim!", 61000, 730, 707], ["2_rfEmdoTHo", "En Büyük Düşmanım:Balıkçı", 78000, 730, 621], ["yzquBjQ56cg", "Sonunda Bu Desteyi Maxladım!(Düşman İçimizde)", 85000, 730, 882], ["nKoZJnh08vw", "En Adaletli Oyun Modu: Çekiliş", 102000, 730, 691], ["gyGs4vieLRE", "Kıvılcım İle Küresele Kasıyoruz🤐(%100Anti Maçlar)", 150000, 730, 1094], ["WFkoEdDS50g", "Oyunun En İyi Binici Destesi!(Çok Güçlü)", 58000, 730, 730], ["aGwPBkx1RYY", "Bu Desteyle Son Videom!En Çöp Evrim", 65000, 730, 915], ["lXWlYV32jq4", "Clash Royale Tarihinde Bir İlk 1 Canla Kazandım!", 80000, 730, 773], ["yRByXArERm4", "Dünya 1.Sinin Destesini Kopyaladım!(%100Yetenek )", 68000, 730, 717], ["U9HpxtFwAfU", "%0 Yetenek Gerektiren Desteyle Oynadım", 63000, 730, 735], ["d2LO6wWMES8", "Oyunun En Sinir Bozucu Destesiyle Rakipleri Tilt Ediyoruz!", 71000, 730, 717], ["_rzdvNjo_3A", "En Güçlü Şampiyon Kart:Okçu Kraliçe!", 48000, 730, 673], ["TCIZVyDRotY", "Kraliyet Devi Yeni Metada!(Balıkçıya Rağmen Çalışıyor)", 76000, 730, 947], ["B89vHSpRtEE", "Yanılmışım!Oyunun En Çöp Evrimi:Valkür", 71000, 730, 732], ["-oC4mSgdaDI", "Oyunun En Güçlü Evrimi Geldi!Valkür", 61000, 730, 691], ["8El9De6OvlM", "Oyunun En Çöp Efsanevisi:Balıkçı!", 85000, 730, 694], ["fjKXWHTRiNk", "Yan Kuleleri Almadan Doğrudan 3 Taç Çektim", 131000, 730, 1004], ["VsEbbscZEbo", "Bu Desteyle Son Videom!", 54000, 730, 701], ["9s80UAb7GlE", "Bu Desteyi Hemen Maxlayın!(çok güçlendi)", 52000, 730, 782], ["cD83ApLPttI", "Takipçilerle Vs Atıyorum(En Riskli Seri)", 68000, 730, 1166], ["09Veu9U88hs", "İmkansız Eşleşmelere Karşı Oynuyoruz!(%100Anti)", 142000, 730, 953], ["2c-hu3zvug8", "Oyunun En Çöp Evrimini Deniyoruz!(Sakın Kullanmayın)", 46000, 730, 779], ["2KR1CW9tpLA", "Oyun Şaka Yapmış!", 65000, 730, 878], ["GYnnGBHTdv0", "Kraliyet Turnuvasının En İyi Destesi!(Full 3 Taç)", 38000, 730, 756], ["41CLKZwu5OU", "En Sinir Bozucu Kartlar Bir Destede! Kupa Maçları", 45000, 730, 674], ["qawaVOATewA", "Yeni Güncelleme Ve Dengeleme Değişiklikleri!", 38000, 730, 929], ["to-E6LqPtcA", "Oyunun En Sinir Bozucu Destesiyle Oynuyoruz!?", 39000, 730, 635], ["9fnteWtzXQw", "Böyle Kartların da Böyle Eşleşme Sistemininde...", 144000, 730, 1056], ["4rzSRW0AATI", "En İmkansız Eşleşmelere Karşı Antileri Ezdim!", 47000, 730, 795], ["JY87iJaIb9w", "Oyunun En Güçlü Mega Şövalye Destesini Deniyoruz!", 52000, 730, 1030], ["QTgrJ2fDPDE", "Oyunun En Çöp Efsanevisiyle Oynuyoruz(Sakın Kullanmayın)", 200000, 730, 1031], ["c5fZWeUqeXs", "Eskilerin En İyi Binici Destesini Deniyoruz!", 40000, 730, 633], ["57nSSgvCgCk", "Oyunun En Yetenek Gerektiren Destesini Deniyoruz!", 47000, 730, 904], ["xHvbRXuqVhM", "Antilere Karşı Sıralamaya Kasıyoruz!", 33000, 730, 676], ["U9bFexqMx5k", "Merak Ettiklerinizi Cevaplıyorum!(Para Kazanıyor muyum,En Utandığım an?)", 309000, 730, 1469], ["ZUYsePhRdjA", "En Sinirli Videom!Antisi Bitmiyor", 228000, 730, 819], ["-9KbL6-5kkI", "Oyunun En Büyük Güncellemesi Geliyor!(Prenses kulesi,Yeni Kart)", 28000, 730, 900], ["ED-rCBL9J_0", "Antileri Eze Eze Sıralamaya Kasıyoruz", 28000, 730, 663], ["3aogiu76dj0", "Oyunun En Kötü Evrimi!(Daha Kötüsü Gelmez)", 47000, 730, 715], ["EoVGfFhL5dU", "Kraliyet Turnuvasını Fullemeniz İçin En İyi Deste!(2Evrim Tek Destede)", 30000, 730, 1071], ["6MljQDtCdIo", "En İyi Balon Destesini Deniyoruz!(Çok Hızlı)", 34000, 730, 831], ["yNgJ66902CM", "Takipçilerle Vs Atıyoruz!(En Tehlikeli Seri🙂)", 20000, 730, 884], ["4QUSwCp7q9E", "Oyunun En Güçlü Evrimini Deniyoruz!?", 30000, 730, 724], ["mcXQQJXCU08", "Eski Sevgilimin Clash Royale Hesabını Çaldım!(Mega Kraliyet Turnuvası)", 36000, 730, 666], ["S-FoB-T8s1U", "1Gün Boyunca Toxic Oyuncu oldum!", 83000, 730, 1084], ["XsZGu20Wvd8", "En Sevmediğim Efsanevi Kartla Sıralama maçları!", 26000, 730, 641], ["IZv8jYidBM0", "Oyunun En Çöp Evrimini Deniyoruz!(Kullanılır mı?)", 17000, 730, 614], ["AFfuWOStbEE", "Oyunun En Çöp Efsanevisi!(bunu sakın kullanmayın!)", 24000, 730, 695], ["OUmBBkN75Uo", "Şampiyonsuz En İyi Deste!?", 21000, 730, 860], ["CQlW9ufKpUw", "CRL 20 Galibiyet İçin En İyi Deste!", 28000, 730, 1040], ["F221eXkzMP4", "En Güçsüz Evrimin En Güçlü Destesi!", 13000, 730, 724], ["tyLShR0py9k", "Toxic Rakibin Gururuyla Oynadım", 46000, 730, 816], ["VtDPx5DtxZM", "Clash Royalede Bir İlk imkansızı başardım!", 25000, 730, 776], ["PW32CuBjums", "Oyunun En Güçsüz Evrimini Deniyoruz!", 14000, 730, 718], ["g39Lc0Hs7hw", "1GÜN BOYUNCA TOXİC OYUNCU OLMAK😡", 18000, 730, 697], ["d3R-dIw3llo", "Oyunun En sinir bozucu Destesiyle Antileri Eziyoruz", 11000, 730, 638], ["78FWXpgxhco", "En İyi Desteyi Deniyorum!(şampiyonsuz)", 29000, 730, 996], ["3r0b0b6TAwk", "Antilere Karşı Sezon Sonuna Doğru...", 19000, 730, 680], ["Wrdj2eNzc3A", "Toxic Oyuncu Olup Rakibi Sinir ederek Maç Kazanmak!?", 14000, 730, 729], ["BwpG7pLZnAw", "%100 Yetenek Destesiyle Antileri Ezdim!", 17000, 730, 715], ["d0lsc0qTGXM", "Antilere Karşı Kupa Maçları! Sıra 35", 46000, 730, 854], ["MHI0hJFGBs4", "Küresele Kasıyoruz!( Sıra 30)", 18000, 730, 647], ["ugA7ofKq0Yc", "clash royale", 16000, 730, 715], ["BjRraTz89qE", "Antisi Bitmeyen Oyun! Kupa Maçları", 74000, 730, 851], ["eVFFH66-ZvE", "Korkunç Desteyle ilk 1000'e Kasıyoruz!?", 46000, 730, 811], ["unphqoCjHbc", "Yetenek Destesi İle Sıralamaya Doğru! 🙂", 11000, 730, 627], ["iVzkmqrKhVo", "Dünyanın* En Adaletsiz* Oyunu! Clash Royale", 40000, 730, 933], ["N1fX43LIz_M", "Antileri Ezdim! (sıra 50)", 15000, 730, 659], ["JFYHEDn4qD4", "Küreseldeki En Toxic Oyuncunun Destesini Kopyaladım!", 20000, 730, 601], ["pAHTafBuCk0", "Oyunun *En Güçlü* Evrimi Geldi!", 12000, 730, 749], ["shiVPeVvJsA", "Üçlü Çekiliş Kraliyet Turnuvası En İyi Taktikler!?", 47000, 730, 1088], ["eKXPHJP-CDc", "Kupa Maçında Dünya Birincisiyle Karşılaştım!", 75000, 730, 1304], ["lFTTV1VaHFk", "Kolsuzlar Bunu Savunamaz! En İyi Domuzcuklar Destesi", 18000, 730, 906], ["_Yn6Ya1ESAQ", "Yeni Evrim Ve Dengeleme Değişikleri!?", 15000, 730, 1468], ["KEPTOUkNXYw", "Dünya 1.nin Destesini Kopyaladım!", 7700, 730, 622], ["szGllMVHjLE", "Bedava 2 Milyon Altın Veren Linkler Tekrar Aktif Hemen Alın", 9600, 730, 64], ["vtgGAcB0-vE", "Bu Videoda En İmkansız Eşleşmeleri Yeniyorum! Clash Royale", 16000, 730, 833], ["GvHvuM10Rfg", "Geleceğe Yatırım Destesi! Clash Royale", 9100, 730, 554], ["bgcrY_MqOkQ", "Antileri Bu Desteyle Eziyorum! Geleceğe yatırım destesi", 13000, 730, 1090], ["dyYrU0zKOjA", "İlk Defa Biz Antiyiz! İlaç Gibi Maçlar", 31000, 730, 901], ["ur9rjtIi1QU", "Bedava Royalepas Aldım! (0TL)", 19000, 730, 831], ["_7PtYiDMaWk", "Yeni Sezon Yeni Meta! ( Nihaiye Doğru )", 12000, 730, 1050], ["pAFaJ26JAhY", "Clash Royale 2 Milyon Altın Kazanma Bugu", 18000, 730, 139], ["GxEk_fCCFic", "Yeni Gelen Evrim Ve Dengeleme Değişiklikleri!", 7600, 730, 709], ["0E-dsjitRIk", "Ünlü YouTuber Maçımı İzleyip Yorumluyor!", 203000, 730, 602], ["e2_LfwV9w8M", "Anti Royale İle Sezon Sonuna Doğru....", 16000, 730, 773], ["Ag0cx3Mw3JU", "%100 Yetenek Gerektiren Deste!? Clash Royale", 12000, 730, 840], ["YUQN7ZY1k7g", "Antilerin Kafasını Ezdim! Clash Royale", 11000, 730, 699], ["9XikfRleXoU", "Kupa Kasabilmeniz İçin En Önemli Taktikler!? ( Belli Bir Kupada takılı Kalmayın)", 13000, 730, 960], ["Yq8VCwBkqk4", "Max Bile Olmayan Desteyle Sıralamaya Girdim ( Sıra 126)", 7100, 730, 800], ["UxasC_Tb_wo", "Oyunun *En Güçlü* Efsanevi Kartını Sonunda Maxladım", 9600, 730, 831], ["S-yz-H23Ljs", "Dünyanın En Pahalı Oyununu Oynuyoruz!?", 8300, 730, 873], ["FDMTs2zF2yQ", "En Kötü Golem Oyuncusuyla Karşılaştım!? (Noob Vs Pro )", 9300, 1095, 658], ["adxqOgPVUK0", "En Kötü Evrimli Kartla Sıralamaya Oynuyoruz!?", 9400, 1095, 778], ["psT1WnsPElM", "İlk Günden Şampiyona Kasmak!( sezona başlıyoruz)", 3700, 1095, 737], ["1HZatx64NL0", "Anti Royale İle Sezon Sonuna Doğru!? (Sıra65)", 11000, 1095, 826], ["J07yNyTrlCE", "Anti Rakiplere Karşı İlaç Gibi Maçlar!", 8300, 1095, 759], ["KYJx9CXXiNg", "Kraliyet Turnuvası Sıralamaya Kasıyoruz❗(20 Galibiyet+)", 5300, 1095, 964], ["dRTFnDsUfgw", "Aynalı Kraliyet Turnuvası Taktiklerle +20 galibiyet ❗", 3300, 1095, 671], ["CXNHwPVwTI0", "Yenilgisiz Desteyle 7Kat İksir Turnuvasını Fulleyin❗( %100 3Taç)", 11000, 1095, 662], ["4VnMDnBB9v4", "Amerikalı Dünya Yıldızına 3 Taç Çektim❗", 5800, 1095, 834], ["VfQmegqaBQg", "1 Maç Kaybedersem Oyunu siliyorum❗( En Zor Challenge )", 10000, 1095, 636], ["rcitlXomcF0", "Kraliyet Devinin En İyi Destesi❗Durdurulamıyor", 3000, 1095, 757], ["uu8N9Iap0CY", "Pekka Ve Mezarlık Aynı Destede ( Bu Deste Yenilgisiz😄)", 3700, 1095, 692], ["_GaDeL_gG5U", "%0 Yetenek Gerektiren Kolsuz Destesi (Kraliyet Turnuvasını Fulleyin)", 7600, 1095, 752], ["M5VU2tN4wF8", "1.9 En Hızlı Binici Destesi İle Trolledim 😂", 8500, 1095, 704], ["RBHvKi3m6IE", "Sıralama Maçında Rus e-sporcu ile Karşılaştım", 4800, 1095, 983], ["7atxseIo554", "24 Saat Clash Royale Oynamak (sıra 40)", 8100, 1095, 688], ["G51PBrFicTA", "Bu Videoda Sadece Anti Rakipleri yeniyoruz ❗(Evrimli Kraliyet Devi )", 9100, 1095, 813], ["-ltG8kK4uvs", "2.9 Evrimli Kraliyet Devi Destesi❗ Durmadan Spamlıyoruz😘", 8800, 1095, 801], ["ouCBVrxjG8E", "1Kale Feda Ederek Oynadım En Zor Challenge 😎 ( Son Videom)", 1800, 1095, 602], ["aAE13xW2Wvg", "Nihai Şampiyonda Rakibe Oyunu Sildirttim❗ Vatan Savunur Gibi #1", 2000, 1095, 116], ["fYF4QbqV1c0", "Kendi Destemle Nihai Şampiyona Çıktım Clash Royali Bitirdim❗", 3200, 1095, 871], ["obm5OroFW-g", "1 Günde Clash Royali Bitirmek +7500👑", 2800, 1095, 794], ["rgReg2tyAEw", "İlahi Dinleyerek Full 3 Taç Çekmek 😂 Clash royale", 6200, 1095, 782], ["-dbBqVvDfVk", "Kraliyet Turnuvasının En İyi Destesi❗ 20+ Galibiyet Garanti", 1800, 1095, 1411], ["myeQybxjoEg", "1 Gün Boyunca Toxic Oyuncu Olmak 😂(Rakipleri Çıldırttık)", 4400, 1095, 640], ["WCjMy_g8ET4", "CLASH ROYALİN EN BÜYÜK GÜNCELLEMESİ VE TÜM DETAYLAR 👑", 2900, 1095, 636], ["eSUue5hMt08", "Oyun Kaybetmem İçin Bana Hile Yaptı", 3200, 1095, 203], ["dby-dZGgnmQ", "Sadece Sağ Taraftaki Kartları Seçtim", 3500, 1095, 1172], ["cqQprzhTfVs", "Oyunun En hızlı Fıçı Destesiyle Kupa Maçı ( Rakipleri Çıldırttım)", 4200, 1095, 789], ["JFlv8q9oM2E", "Bu Desteyi Gören Oyunu Bırakıyor - Clash Royale", 2000, 1095, 652], ["H2-1SYAN7RU", "20 Galibiyet Garantili 2 Deste( Kraliyet Turnuvası  Rekorunu Kır)", 1700, 1095, 1102], ["K1TK_QxEVxk", "5 Saniyede 2 Defa Kraliyet Devi Atıyoruz❗Bu Deste Mükemmel 😈", 2300, 1095, 716], ["TNVWz_Mfvzc", "Dünya 1. Yendim (Hayatımın Maçını oynadım)", 3700, 1095, 764], ["ij9B-ts7zKk", "Ucuz Kartları Seçmek ❗ İmkansız Eşleşmeler", 5300, 1095, 966], ["TqPFp8wHkCU", "Bundan Daha İyi Pekka Destesi Yok👑", 3800, 1095, 1027], ["ZkoJNCOG_Zg", "Clash Royale'nin En Güçlü Destesiyle Rekora Doğru...", 2400, 1095, 853], ["R5Fq8RonN_k", "20 GALİBİYET GARANTİLİ 3 DESTE (KRALİYET TURNUVASI BU DESTELERLE ÇOK KOLAY )", 1700, 1095, 1079], ["g4qJ6hYT41c", "Dünya 1.nin Destesiyle Kraliyet Öfke Turnuvası ( En İyi Logbait)", 2600, 1095, 502], ["aZtptC4Zad0", "Bu Taktikle Kupa Rekorunu Kır❗Nefes Kesen Maçlar🙂 - Clash Royale-", 2300, 1095, 539], ["ejgcSjir-5Q", "20 Galibiyet Garantili 2 Deste (Öfke Kraliyet Turnuvası) - Clash Royale-", 4200, 1095, 1098], ["eYWwrFcjffc", "Hiç durmadan 13 Tane Elektro Dev spamlayan rakip❗(Çileden çıkartan Maç) - Clash Royale-", 5800, 1095, 305], ["RQKRUdkMVQ8", "Emoji Atan Toxic Rakibe 40 saniyede İbretlik Son❗", 4800, 1095, 246], ["qwcP5-U1mKw", "KUPA MAÇINDA CRL ŞAMPİYONUNA DENK GELDİM😱 NEFES KESEN MAÇ ❗", 2200, 1095, 322], ["6sM0Ns5VrZ0", "Bu Nasıl Bir Seviye Farkı 2.6 Destesi İle Nefes kesen Kupa Maçı 😱 - Clash Royale-", 3400, 1095, 284], ["TJYpkjKh0Mw", "CRL'de Şov yaptığım maç ve deste ❤️🇹🇷", 4100, 1460, 332], ["YwpTB7ZzIZQ", "KUPA MAÇINDA İNANILMAZ OLAY😱 10 SANİYEDE MAÇI ÇEVİRDİM 👑", 3600, 1460, 488], ["dBM5k8Zc_Q0", "EN AĞIR G\" DESTESİYLE OYNADIM (GÜLMEKTEN AĞLATAN MAÇLAR 😂)", 7700, 1460, 257], ["I-_j32BnvwE", "Hiç Kimsenin Oynamadığı Nefret edilen desteyle oynadım❗Clash Royale", 4400, 1460, 497], ["KMk_RGuyCMM", "Bu Taktikle Artık Karşına Anti deste Gelemeyecek❗-Clash Royale-", 6200, 1460, 337], ["jN6vQBL8rW0", "Dünyada İlk❗13 level hesapla 7000 kupa Adama denk geldim(Sıra 803) 🙃", 5200, 1460, 280], ["Q7h_qN24QPE", "13Level hesapla sıralamaya girdim Türkiye'de İlk 🇹🇷❤️ Sıra 914🌟", 9800, 1460, 218], ["YlE0HZlAXIo", "Yeni Sezonun Metası Olacak Yenilmez Deste Clash Royale", 30000, 1460, 470], ["kNvyEeJ3wXw", "Yüksek Kupada Psikolojimi bozan o Maç- Clash Royale -🤬", 68000, 1460, 188], ["ul_Tr6SHAV4", "Rank Maçında Dünya 5.Si NRx ekibiyle 1vs4 pozisyonda kaldım❗Yektanın gözünden", 8700, 1460, 122], ["tQwP6rvQDa0", "PUBG MOBİLE GLOBAL CHAMPİON ❗1VS 3 /EN İYİ ANLAR", 6000, 1825, 882], ["Sf-JhyXCzrY", "2 VE 3 PARMAK İÇİN EN İYİ HASSASİYETLER VE REFLEX ANTRENMANI", 5700, 1825, 178], ["4JPPND4W2OE", "HYPNOS FRAGMOVİE /KATLİAM ANLARI❗PUBG MOBİLE", 8100, 2190, 150], ["nMiFd_9wQXw", "22KİLLS❗KİMSENİN BİLMEDİĞİ GİZLİ YERE ATLADIM ‼️FULL RUSH / ERANGEL GAMEPLAY", 4200, 2190, 613], ["Zw8cRSxQB1o", "NEW WORLD RECORD DAMAGE 5300 ❗S13 The Best Match İn The World Erangel Gameplay", 4500, 2190, 695], ["8mpeIdxpy7Q", "23KİLL Uçak sahibi ekiple Nefes kesen 1 Vs 4 / Bu Maç nefesinizi kesecek  PUBG MOBİLE", 3100, 2190, 954], ["69WmG9rXqu8", "Oyunun en kötü silahıyla bootcamp temizleme Challenge PUBG Mobile", 3300, 2190, 317], ["CPjVagunzAo", "Avrupa Turnuva Finallerinde Futbolist Ve Heroes X yargı dağıtıyor /Puan Durumu /önemli anlar", 3900, 2190, 700], ["_oFm1uSEz1I", "20Kill İNSANE Fight Georgepool And Best Spray Scar-L", 7300, 2190, 558], ["oUalM0OHH7U", "Best Rush in Georgepool /Solo Vs Squad/Erangel Gameplay", 3800, 2190, 512], ["ff51VY0wShk", "Havadaki adama Awm vuruşu harika Villa temizliği", 9200, 2190, 480], ["TmGbobeeGOo", "Son adama Tava attım Harika Villa savaşı...", 20000, 2190, 491], ["AkJ1JTwF6YE", "Türklerle Yaptığım anlaşmayı bozdum çıldırdılar", 124000, 2190, 99]];
+const CH = {views:0};
+
+/* =============== TURKISH-SAFE NORMALISATION =============== */
+const TRMAP={'ı':'i','İ':'i','I':'i','ş':'s','Ş':'s','ğ':'g','Ğ':'g','ü':'u','Ü':'u','ö':'o','Ö':'o','ç':'c','Ç':'c','â':'a','Â':'a','î':'i','û':'u','é':'e'};
+function norm(s){
+  let out='';
+  for(const ch of s){ out += (TRMAP[ch]!==undefined?TRMAP[ch]:ch); }
+  return out.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
+}
+function tokenize(s){ return norm(s).split(/[^a-z0-9]+/).filter(Boolean); }
+
+/* =============== TAGS =============== */
+const TOPICS=[
+  {id:'kaos',   l:'K.A.O.S Modu', e:'💥', re:/k\.?a\.?o\.?s/},
+  {id:'buton',  l:'Yeşil / Cenabet Buton', e:'🟢', re:/\bbuton/},
+  {id:'kahraman',l:'Kahramanlar', e:'🦸', re:/kahraman/},
+  {id:'evrim',  l:'Evrimler', e:'🧬', re:/evrim/},
+  {id:'deste',  l:'Desteler', e:'🃏', re:/deste/},
+  {id:'turnuva',l:'Turnuva & CRL', e:'🏆', re:/turnuva|crl|galibiyet|sampiyon/},
+  {id:'toxic',  l:'Toxic & Trol', e:'😈', re:/toxic|toksik|serefsiz|cenabet|barzo|trolle|rezil|terbiye/},
+  {id:'japon',  l:'Japonlar & Rakipler', e:'🌏', re:/japon|koreli|hindistan|arap|rus |amerikal|meksikal|israil|cinli|suriye/},
+  {id:'emoji',  l:'Emoji', e:'😂', re:/emoji/},
+  {id:'guncelleme',l:'Yenilik & Güncelleme', e:'🛠️', re:/guncelleme|nerf|dengeleme|supercel|sezon|geldi|geliyor/},
+  {id:'kuzen',  l:'Kuzen & 2v2', e:'👬', re:/kuzen|2v2|2vs2|takipcilerle vs|takim arkadas/},
+  {id:'challenge',l:'Challenge', e:'🎯', re:/gun boyunca|gunluguna|24 saat|kaybedersem|kazanirsam|challenge|siliyorum|sildirt|maxla/},
+  {id:'kupa',   l:'Kupa & Sıralama', e:'🏅', re:/kupa|siralama|kuresel|nihai|arena|derece/},
+  {id:'taktik', l:'Taktik & Rehber', e:'🧠', re:/taktik|en iyi deste|ipucu|nasil|ogret|acigini buldum|kopyala|calisiyor/},
+  {id:'vlog',   l:'Soru-Cevap & Vlog', e:'🎙️', re:/soru cevap|merak ett|icimi dok|dogum gun|iftar|neden video|en komik|en iyi anlar|fail anlar|duyuru|hikaye|veda|elveda|bir devrin sonu/},
+  {id:'pubg',   l:'PUBG (Eski Dönem)', e:'🔫', re:/pubg|erangel|kill|fragmovie|hassasiyet|georgepool|bootcamp|awm|scar/}
+];
+const CARDS=[
+  {id:'kivilcim',l:'Kıvılcım', e:'✨', re:/kivilcim/},
+  {id:'balikci', l:'Balıkçı', e:'🎣', re:/balikci/},
+  {id:'golem',   l:'Golem', e:'🗿', re:/golem/},
+  {id:'pekka',   l:'P.E.K.K.A', e:'🤖', re:/p\.?e\.?k\.?k\.?a/},
+  {id:'megasov', l:'Mega Şövalye', e:'⚔️', re:/mega sovalye/},
+  {id:'xyayi',   l:'X Yayı', e:'🏹', re:/x ?yayi/},
+  {id:'kostebek',l:'Köstebek', e:'⛏️', re:/kostebek/},
+  {id:'bombaci', l:'Bombacı', e:'💣', re:/bombaci/},
+  {id:'goblin',  l:'Goblinler', e:'👺', re:/goblin/},
+  {id:'dev',     l:'Dev / Elektro Dev', e:'🦍', re:/\bdev\b|dev goblin|dev iskelet|elektro dev|kraliyet devi|dev kartopu/},
+  {id:'balon',   l:'Balon', e:'🎈', re:/balon/},
+  {id:'oduncu',  l:'Oduncu', e:'🪓', re:/oduncu/},
+  {id:'valkur',  l:'Valkür', e:'🛡️', re:/valkur/},
+  {id:'buyucu',  l:'Büyücü', e:'🔮', re:/buyucu/}
+];
+const ALLTAGS=[...TOPICS,...CARDS];
+const TAGMAP=Object.fromEntries(ALLTAGS.map(t=>[t.id,t]));
+
+/* =============== BUILD MODEL =============== */
+const V = RAW.map((r,i)=>{
+  const n = norm(r[1]);
+  const tags = [];
+  for(const t of ALLTAGS) if(t.re.test(n)) tags.push(t.id);
+  CH.views += r[2];
+  // collapsed form: "k.a.o.s" -> "kaos", "p.e.k.k.a" -> "pekka"
+  const nc = n.replace(/[^a-z0-9]/g,'');
+  return {id:r[0], t:r[1], n, nc, w:tokenize(r[1]), v:r[2], d:r[3], s:r[4], tags, i};
+});
+const TAGCOUNT={};
+for(const t of ALLTAGS) TAGCOUNT[t.id]=0;
+for(const v of V) for(const t of v.tags) TAGCOUNT[t]++;
+
+/* =============== FORMATTERS =============== */
+function fViews(n){
+  if(n>=1e6) return (n/1e6).toFixed(n>=1e7?0:1).replace(/\.0$/,'').replace('.',',')+' Mn';
+  if(n>=1e3) return Math.round(n/1e3)+' B';
+  return String(n);
+}
+function fDur(s){
+  const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=s%60;
+  return h? h+':'+String(m).padStart(2,'0')+':'+String(x).padStart(2,'0') : m+':'+String(x).padStart(2,'0');
+}
+function fAgo(d){
+  if(d<=1) return 'dün';
+  if(d<7) return d+' gün önce';
+  if(d<31) return Math.max(1,Math.round(d/7))+' hafta önce';
+  if(d<365) return Math.max(1,Math.round(d/30))+' ay önce';
+  const y=Math.round(d/365); return y+' yıl önce';
+}
+
+/* =============== SEARCH =============== */
+function ed1(a,b){ // true if edit distance <= 1
+  if(a===b) return true;
+  const la=a.length, lb=b.length;
+  if(Math.abs(la-lb)>1) return false;
+  let i=0,j=0,diff=0;
+  while(i<la&&j<lb){
+    if(a[i]===b[j]){i++;j++;continue}
+    if(++diff>1) return false;
+    if(la>lb) i++; else if(lb>la) j++; else {i++;j++}
+  }
+  return true;
+}
+function scoreVideo(v,toks,qc,acr){
+  // "k.a.o.s" / "p.e.k.k.a" style queries: match the punctuation-free form only
+  if(acr) return v.nc.includes(qc) ? 25 : -1;
+  let sc=0;
+  for(const tk of toks){
+    let best=0;
+    if(v.n.includes(tk)){
+      best = 12;
+      for(const w of v.w){ if(w===tk){best=30;break} if(w.startsWith(tk)){best=Math.max(best,22)} }
+    } else if(tk.length>=4){
+      for(const w of v.w){ if(ed1(w,tk)){ best=8; break } }
+      if(!best && tk.length>=5){
+        for(const w of v.w){ if(w.length>=4 && (tk.startsWith(w.slice(0,4))||w.startsWith(tk.slice(0,4))) && ed1(w.slice(0,tk.length),tk)){ best=5; break } }
+      }
+    }
+    if(!best){
+      // acronym / punctuation-insensitive fallback: "kaos" ↔ "K.A.O.S", "pekka" ↔ "P.E.K.K.A"
+      if(qc && qc.length>=3 && v.nc.includes(qc)) return 16;
+      return -1;
+    }
+    sc+=best;
+  }
+  if(v.n.startsWith(toks.join(' '))) sc+=10;
+  return sc;
+}
+
+/* =============== STATE =============== */
+const store={
+  get(){ try{ return JSON.parse(localStorage.getItem('hypnos_wl')||'[]') }catch(e){ return mem } },
+  set(a){ mem=a; try{ localStorage.setItem('hypnos_wl',JSON.stringify(a)) }catch(e){} }
+};
+let mem=[];
+let WL = new Set(store.get());
+const S = {q:'', tags:new Set(), sort:'rel', dur:'all', per:'all', wlOnly:false, page:1};
+const PAGE=48;
+let RESULT=[];
+
+/* =============== FILTER PIPELINE =============== */
+function applyFilters(){
+  const toks = tokenize(S.q);
+  const qc = norm(S.q).replace(/[^a-z0-9]/g,'');
+  const acr = toks.length>=2 && qc.length>=3 && toks.every(t=>t.length<=2);
+  let out=[];
+  for(const v of V){
+    if(S.wlOnly && !WL.has(v.id)) continue;
+    if(S.tags.size){ let ok=true; for(const t of S.tags){ if(!v.tags.includes(t)){ok=false;break} } if(!ok) continue; }
+    if(S.dur==='s' && v.s>=900) continue;
+    if(S.dur==='m' && (v.s<900||v.s>1800)) continue;
+    if(S.dur==='l' && v.s<=1800) continue;
+    if(S.per==='m1' && v.d>31) continue;
+    if(S.per==='m3' && v.d>93) continue;
+    if(S.per==='y1' && v.d>365) continue;
+    if(S.per==='y12' && (v.d<=365||v.d>730)) continue;
+    if(S.per==='y2' && v.d<=730) continue;
+    if(toks.length){
+      const sc=scoreVideo(v,toks,qc,acr);
+      if(sc<0) continue;
+      v._sc=sc;
+    } else v._sc=0;
+    out.push(v);
+  }
+  const s=S.sort;
+  if(s==='rel'&&toks.length) out.sort((a,b)=>b._sc-a._sc || b.v-a.v);
+  else if(s==='rel') out.sort((a,b)=>a.i-b.i);
+  else if(s==='new') out.sort((a,b)=>a.d-b.d || a.i-b.i);
+  else if(s==='old') out.sort((a,b)=>b.d-a.d || b.i-a.i);
+  else if(s==='pop') out.sort((a,b)=>b.v-a.v);
+  else if(s==='long') out.sort((a,b)=>b.s-a.s);
+  else if(s==='short') out.sort((a,b)=>a.s-b.s);
+  RESULT=out;
+}
+
+/* =============== RENDER =============== */
+const grid=document.getElementById('grid');
+const moreBox=document.getElementById('more');
+function hl(title,toks){
+  if(!toks.length) return esc(title);
+  const n=norm(title); let marks=new Array(title.length).fill(false);
+  for(const tk of toks){
+    let from=0,idx;
+    while((idx=n.indexOf(tk,from))!==-1){ for(let k=idx;k<idx+tk.length&&k<title.length;k++) marks[k]=true; from=idx+tk.length; }
+  }
+  let html='',open=false;
+  for(let i=0;i<title.length;i++){
+    if(marks[i]&&!open){html+='<mark>';open=true}
+    if(!marks[i]&&open){html+='</mark>';open=false}
+    html+=esc(title[i]);
+  }
+  if(open) html+='</mark>';
+  return html;
+}
+function esc(s){ return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])) }
+
+function renderPage(reset){
+  const toks=tokenize(S.q);
+  if(reset){ grid.innerHTML=''; S.page=1; }
+  const start=(S.page-1)*PAGE, slice=RESULT.slice(start,start+PAGE);
+  const frag=document.createDocumentFragment();
+  slice.forEach((v,k)=>{
+    const a=document.createElement('a');
+    a.className='card'; a.style.setProperty('--i', Math.min(k,26));
+    a.href='https://www.youtube.com/watch?v='+v.id; a.target='_blank'; a.rel='noopener';
+    const tg=v.tags.slice(0,3).map(t=>`<span>${TAGMAP[t].e} ${esc(TAGMAP[t].l)}</span>`).join('');
+    const rank=(S.sort==='pop'&&!toks.length)?`<span class="rank">#${start+k+1}</span>`:'';
+    a.innerHTML=`
+      <div class="thumb">
+        <img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="https://i.ytimg.com/vi/${v.id}/mqdefault.jpg" alt="">
+        <div class="shine"></div>
+        <div class="play"><i>▶</i></div>
+        <button class="wl${WL.has(v.id)?' on':''}" data-id="${v.id}" title="İzleme listesi" aria-label="İzleme listesine ekle">★</button>
+        ${rank}
+        <span class="dur">${fDur(v.s)}</span>
+      </div>
+      <div class="meta">
+        <h3>${hl(v.t,toks)}</h3>
+        <div class="sub"><span>${fViews(v.v)} izlenme</span><span class="dot">•</span><span>${fAgo(v.d)}</span></div>
+        <div class="tg">${tg}</div>
+      </div>`;
+    frag.appendChild(a);
+  });
+  grid.appendChild(frag);
+  moreBox.innerHTML = RESULT.length>S.page*PAGE
+    ? `<button id="moreBtn">⬇ Daha fazla göster (${RESULT.length-S.page*PAGE} video)</button>` : '';
+  const mb=document.getElementById('moreBtn');
+  if(mb) mb.onclick=()=>{ S.page++; renderPage(false); };
+}
+function render(){
+  applyFilters();
+  try{ syncURL() }catch(e){}
+  const c=document.getElementById('count');
+  const active = S.q||S.tags.size||S.dur!=='all'||S.per!=='all'||S.wlOnly;
+  c.innerHTML = RESULT.length
+    ? `${RESULT.length} video <span>${active?'bulundu':'· tüm arşiv'}</span>`
+    : `<span style="color:#ff9a9a">Sonuç yok</span>`;
+  document.getElementById('reset').style.display = active?'':'none';
+  if(!RESULT.length){
+    grid.innerHTML=`<div class="empty" style="grid-column:1/-1"><div class="e">🃏</div>
+      <h3>Bu aramaya uygun video bulunamadı</h3>
+      <p>Farklı bir kelime dene ya da filtreleri sıfırla.</p></div>`;
+    moreBox.innerHTML='';
+    return;
+  }
+  renderPage(true);
+}
+
+/* =============== CHIPS =============== */
+function buildChips(box, list){
+  box.innerHTML='';
+  list.forEach(t=>{
+    const b=document.createElement('button');
+    b.className='chip'; b.dataset.id=t.id;
+    b.innerHTML=`${t.e} ${esc(t.l)} <span class="n">${TAGCOUNT[t.id]}</span>`;
+    b.onclick=()=>{
+      if(S.tags.has(t.id)){S.tags.delete(t.id); b.classList.remove('on')}
+      else {S.tags.add(t.id); b.classList.add('on')}
+      render();
+    };
+    box.appendChild(b);
+  });
+}
+buildChips(document.getElementById('topics'), TOPICS);
+buildChips(document.getElementById('cards'), CARDS);
+
+/* =============== BADGES =============== */
+const totalHours=Math.round(V.reduce((a,v)=>a+v.s,0)/3600);
+document.getElementById('badges').innerHTML=`
+  <span class="badge">📼 <b>${V.length}</b> video</span>
+  <span class="badge">👀 <b>${fViews(CH.views)}</b> toplam izlenme</span>
+  <span class="badge">⏳ <b>${totalHours}</b> saatlik arşiv</span>
+  <span class="badge">🏷️ <b>${ALLTAGS.length}</b> konu etiketi</span>`;
+document.getElementById('fcount').textContent=V.length;
+
+/* =============== EVENTS =============== */
+const qEl=document.getElementById('q'), sbar=document.getElementById('sbar');
+let deb;
+qEl.addEventListener('input',()=>{
+  S.q=qEl.value; sbar.classList.toggle('has',!!S.q);
+  clearTimeout(deb); deb=setTimeout(()=>{ if(S.q&&S.sort!=='rel'){} render(); },110);
+});
+document.getElementById('clearq').onclick=()=>{ qEl.value=''; S.q=''; sbar.classList.remove('has'); render(); qEl.focus(); };
+document.querySelectorAll('.chipmini').forEach(b=>b.onclick=()=>{
+  qEl.value=b.dataset.s; S.q=b.dataset.s; sbar.classList.add('has'); render();
+  window.scrollTo({top:document.querySelector('.statusbar').offsetTop-90,behavior:'smooth'});
+});
+document.getElementById('sort').onchange=e=>{S.sort=e.target.value;render()};
+document.getElementById('dur').onchange=e=>{S.dur=e.target.value;render()};
+document.getElementById('per').onchange=e=>{S.per=e.target.value;render()};
+document.getElementById('reset').onclick=()=>{
+  S.q='';qEl.value='';sbar.classList.remove('has');S.tags.clear();S.dur='all';S.per='all';S.wlOnly=false;S.sort='rel';
+  document.getElementById('sort').value='rel';document.getElementById('dur').value='all';document.getElementById('per').value='all';
+  document.querySelectorAll('.chip.on').forEach(c=>c.classList.remove('on'));
+  document.getElementById('wlBtn').style.filter='';
+  render();
+};
+
+/* watchlist */
+function updWL(){ document.getElementById('wlN').textContent=WL.size; }
+updWL();
+grid.addEventListener('click',e=>{
+  const b=e.target.closest('.wl'); if(!b) return;
+  e.preventDefault(); e.stopPropagation();
+  const id=b.dataset.id;
+  if(WL.has(id)){ WL.delete(id); b.classList.remove('on'); toast('Listeden çıkarıldı'); }
+  else { WL.add(id); b.classList.add('on'); toast('★ İzleme listene eklendi'); }
+  store.set([...WL]); updWL();
+  if(S.wlOnly) render();
+});
+document.getElementById('wlBtn').onclick=function(){
+  S.wlOnly=!S.wlOnly;
+  this.style.filter=S.wlOnly?'brightness(1.35) saturate(1.4)':'';
+  if(S.wlOnly&&!WL.size) toast('Listen boş — kartlardaki ★ ile ekleyebilirsin');
+  render();
+};
+
+/* random */
+document.getElementById('rand').onclick=function(){
+  this.classList.remove('shake'); void this.offsetWidth; this.classList.add('shake');
+  const pool=RESULT.length?RESULT:V;
+  const v=pool[Math.floor(Math.random()*pool.length)];
+  window.open('https://www.youtube.com/watch?v='+v.id,'_blank','noopener');
+  toast('🎲 '+v.t);
+};
+
+/* avatar fallback when offline / blocked */
+(function(){
+  const a=document.getElementById('ava');
+  if(a && a.complete && a.naturalWidth===0){
+    const d=document.createElement('div'); d.className='avatar fb'; d.textContent='👑'; d.title='HYPNOS CR';
+    a.replaceWith(d);
+  }
+})();
+
+/* toast */
+let tT;
+function toast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg; t.classList.add('show');
+  clearTimeout(tT); tT=setTimeout(()=>t.classList.remove('show'),2400);
+}
+
+/* 3D tilt */
+let raf;
+grid.addEventListener('pointermove',e=>{
+  const c=e.target.closest('.card'); if(!c) return;
+  if(window.matchMedia('(hover:none)').matches) return;
+  cancelAnimationFrame(raf);
+  raf=requestAnimationFrame(()=>{
+    const r=c.getBoundingClientRect();
+    const px=(e.clientX-r.left)/r.width-.5, py=(e.clientY-r.top)/r.height-.5;
+    c.style.transform=`translateY(-6px) rotateX(${(-py*9).toFixed(2)}deg) rotateY(${(px*11).toFixed(2)}deg) scale(1.025)`;
+  });
+});
+grid.addEventListener('pointerleave',()=>{},true);
+grid.addEventListener('pointerout',e=>{
+  const c=e.target.closest('.card');
+  if(c && !c.contains(e.relatedTarget)) c.style.transform='';
+});
+
+/* infinite scroll */
+const io=new IntersectionObserver(es=>{
+  if(es[0].isIntersecting && RESULT.length>S.page*PAGE){ S.page++; renderPage(false); }
+},{rootMargin:'700px'});
+io.observe(moreBox);
+
+/* top button */
+const topBtn=document.getElementById('top');
+topBtn.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+addEventListener('scroll',()=>topBtn.classList.toggle('show',scrollY>700),{passive:true});
+
+/* keyboard */
+addEventListener('keydown',e=>{
+  if(e.key==='/'&&document.activeElement!==qEl){e.preventDefault();qEl.focus()}
+  if(e.key==='Escape'&&document.activeElement===qEl){qEl.blur()}
+});
+
+/* shareable links: ?q=kivilcim & #kaos */
+function syncURL(){
+  const u=new URL(location.href);
+  if(S.q) u.searchParams.set('q',S.q); else u.searchParams.delete('q');
+  if(S.tags.size) u.hash=[...S.tags].join(','); else u.hash='';
+  history.replaceState(null,'',u.toString().replace(/#$/,''));
+}
+(function readURL(){
+  const u=new URL(location.href);
+  const q=u.searchParams.get('q');
+  if(q){ qEl.value=q; S.q=q; sbar.classList.add('has'); }
+  const h=decodeURIComponent(u.hash.replace(/^#/,''));
+  if(h) h.split(',').forEach(id=>{
+    if(TAGMAP[id]){ S.tags.add(id);
+      const c=document.querySelector(`.chip[data-id="${id}"]`); if(c) c.classList.add('on'); }
+  });
+})();
+
+/* orbs */
+(function(){
+  const box=document.getElementById('orbs'); const kinds=['','g','b'];
+  for(let i=0;i<26;i++){
+    const o=document.createElement('div');
+    o.className='orb '+kinds[i%3];
+    const sz=6+Math.random()*22;
+    o.style.width=o.style.height=sz+'px';
+    o.style.left=(Math.random()*100)+'%';
+    o.style.setProperty('--dx',(Math.random()*160-80)+'px');
+    o.style.animationDuration=(14+Math.random()*18)+'s';
+    o.style.animationDelay=(-Math.random()*30)+'s';
+    box.appendChild(o);
+  }
+})();
+
+/* intro */
+setTimeout(()=>{
+  const i=document.getElementById('intro');
+  i.classList.add('done');
+  setTimeout(()=>i.remove(),1700);
+},300);
+
+render();
+</script>
+</body>
+</html>
