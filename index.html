@@ -148,6 +148,59 @@ header{max-width:1280px;margin:0 auto;padding:34px 18px 6px;position:relative}
   box-shadow:0 6px 0 #7a0000,0 14px 26px rgba(0,0,0,.45);transition:.14s}
 .btn-yt:hover{transform:translateY(-2px);box-shadow:0 8px 0 #7a0000,0 18px 30px rgba(0,0,0,.5)}
 .btn-yt:active{transform:translateY(4px);box-shadow:0 2px 0 #7a0000}
+.btn-sub{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:700;font-size:14px;
+  color:#0b0620;padding:12px 20px;border-radius:14px;
+  background:linear-gradient(180deg,#fff,#e7e1ff);border:1px solid rgba(255,255,255,.8);
+  box-shadow:0 6px 0 #7a68c9,0 14px 26px rgba(0,0,0,.45);transition:.14s}
+.btn-sub:hover{transform:translateY(-2px);box-shadow:0 8px 0 #7a68c9,0 18px 30px rgba(0,0,0,.5)}
+.btn-sub:active{transform:translateY(4px);box-shadow:0 2px 0 #7a68c9}
+.online-pill{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;
+  padding:7px 13px 7px 11px;border-radius:999px;color:var(--ink);
+  background:linear-gradient(180deg,rgba(61,220,132,.18),rgba(61,220,132,.06));
+  border:1px solid rgba(61,220,132,.4);backdrop-filter:blur(6px)}
+.online-pill .dot{width:8px;height:8px;border-radius:50%;background:var(--green);
+  box-shadow:0 0 8px 2px rgba(61,220,132,.7);animation:dotpulse 1.6s ease-in-out infinite}
+@keyframes dotpulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.75)}}
+.online-pill b{color:var(--green);font-weight:800}
+
+/* ---------- chat widget ---------- */
+#chatFab{position:fixed;right:22px;bottom:22px;z-index:60;width:60px;height:60px;border-radius:50%;
+  border:1px solid rgba(160,120,255,.4);cursor:pointer;
+  background:linear-gradient(180deg,#8b4dff,#5b21b6);color:#fff;font-size:26px;
+  box-shadow:0 8px 0 #3a1780,0 18px 34px rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;
+  transition:.15s}
+#chatFab:hover{transform:translateY(-2px)}
+#chatFab .badge{position:absolute;top:-4px;right:-4px;background:var(--red);color:#fff;font-size:11px;
+  font-weight:800;min-width:19px;height:19px;border-radius:999px;display:none;align-items:center;justify-content:center;
+  padding:0 4px;border:2px solid var(--bg0)}
+#chatPanel{position:fixed;right:22px;bottom:96px;z-index:60;width:340px;max-width:calc(100vw - 32px);
+  height:460px;max-height:calc(100vh - 140px);border-radius:20px;overflow:hidden;display:none;flex-direction:column;
+  background:linear-gradient(180deg,rgba(28,16,66,.97),rgba(14,8,38,.98));
+  border:1px solid var(--card-b);box-shadow:0 24px 60px rgba(0,0,0,.6);backdrop-filter:blur(10px)}
+#chatPanel.open{display:flex}
+.chat-head{padding:13px 16px;display:flex;align-items:center;gap:9px;border-bottom:1px solid rgba(160,120,255,.18);
+  background:linear-gradient(180deg,rgba(139,77,255,.16),transparent)}
+.chat-head strong{font-size:14px;flex:1}
+.chat-head .x{cursor:pointer;color:var(--ink-dim);font-size:18px;padding:4px 8px;border-radius:8px}
+.chat-head .x:hover{color:#fff;background:rgba(255,255,255,.08)}
+#chatLog{flex:1;overflow-y:auto;padding:12px 14px;display:flex;flex-direction:column;gap:9px}
+.chat-msg{font-size:13px;line-height:1.4;word-break:break-word}
+.chat-msg .n{font-weight:700;color:var(--gold2);margin-right:6px}
+.chat-msg .t{color:var(--ink)}
+.chat-msg .ts{color:var(--ink-dim2);font-size:10.5px;margin-left:6px}
+.chat-sys{font-size:11.5px;color:var(--ink-dim2);text-align:center;padding:2px 0}
+.chat-form{display:flex;gap:8px;padding:11px;border-top:1px solid rgba(160,120,255,.18)}
+.chat-form input{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(160,120,255,.25);
+  border-radius:12px;padding:10px 12px;color:#fff;font-size:13px;font-family:var(--fb)}
+.chat-form input:focus{outline:none;border-color:var(--elixir)}
+.chat-form button{background:linear-gradient(180deg,#8b4dff,#5b21b6);border:none;color:#fff;
+  border-radius:12px;padding:0 15px;font-weight:700;cursor:pointer;font-size:13px}
+.chat-name{padding:10px 14px;border-bottom:1px solid rgba(160,120,255,.18);display:flex;gap:8px}
+.chat-name input{flex:1;background:rgba(255,255,255,.06);border:1px solid rgba(160,120,255,.25);
+  border-radius:10px;padding:8px 10px;color:#fff;font-size:12.5px;font-family:var(--fb)}
+.chat-name button{background:linear-gradient(180deg,#ffe89a,#ffc93c);border:none;color:#3a2600;
+  border-radius:10px;padding:0 13px;font-weight:800;cursor:pointer;font-size:12px}
+@media (max-width:480px){#chatPanel{right:14px;left:14px;width:auto;bottom:88px}#chatFab{right:16px;bottom:16px}}
 
 /* ---------- search ---------- */
 .searchwrap{max-width:1280px;margin:26px auto 0;padding:0 18px;position:relative;z-index:5}
@@ -296,7 +349,7 @@ footer a{color:var(--gold);text-decoration:none}
     grid-template-areas:"av name" "sub sub" "bdg bdg" "yt yt";gap:6px 16px}
   .avatar{width:76px;height:76px;border-radius:20px}
   .avatar.fb{font-size:34px}
-  .btn-yt{width:100%;justify-content:center;margin-top:8px}
+  .btn-yt,.btn-sub{flex:1;justify-content:center;margin-top:8px}
 }
 @media (max-width:640px){
   header{padding-top:20px}
@@ -344,8 +397,10 @@ footer a{color:var(--gold);text-decoration:none}
     </div>
     <p class="sub">Günlük hayatın sıkıcılığından sizi çekip alacak videolar. Aşağıya ne izlemek istediğini yaz — <b style="color:#cfc0ff">"kıvılcım"</b>, <b style="color:#cfc0ff">"kaos"</b>, <b style="color:#cfc0ff">"kuzen"</b> — arşivdeki her video saniyeler içinde karşında.</p>
     <div class="badges" id="badges"></div>
-    <div class="yt-link">
+    <div class="online-pill" id="onlineWrap" style="margin-top:12px;width:fit-content"><span class="dot"></span><b id="onlineN">—</b> kişi şu an sitede</div>
+    <div class="yt-link" style="display:flex;gap:10px;flex-wrap:wrap">
       <a class="btn-yt" href="https://www.youtube.com/@hypnoscr" target="_blank" rel="noopener">▶ Kanala Git</a>
+      <a class="btn-sub" href="https://www.youtube.com/@hypnoscr?sub_confirmation=1" target="_blank" rel="noopener">🔔 Abone Ol</a>
     </div>
   </div>
 </header>
@@ -421,6 +476,30 @@ footer a{color:var(--gold);text-decoration:none}
   HYPNOS CR resmi olmayan, hayran yapımı video arşividir · <span id="fcount"></span> video ·
   Tüm videolar <a href="https://www.youtube.com/@hypnoscr" target="_blank" rel="noopener">YouTube kanalında</a> yayınlanmaktadır.
 </footer>
+
+<button id="chatFab" title="Sohbet">💬<span class="badge" id="chatBadge">0</span></button>
+<div id="chatPanel">
+  <div class="chat-head">
+    <span class="dot" style="width:8px;height:8px;border-radius:50%;background:var(--green)"></span>
+    <strong>Canlı Sohbet</strong>
+    <span id="chatOnlineMini" style="font-size:11px;color:var(--ink-dim2)"></span>
+    <span class="x" id="chatClose">✕</span>
+  </div>
+  <div class="chat-name" id="chatNameBar">
+    <input id="chatNameInput" maxlength="18" placeholder="Takma adın (örn. Kıvılcım42)">
+    <button id="chatNameSave">Tamam</button>
+  </div>
+  <div id="chatLog"><div class="chat-sys">Sohbete bağlanılıyor…</div></div>
+  <form class="chat-form" id="chatForm" style="display:none">
+    <input id="chatInput" maxlength="220" autocomplete="off" placeholder="Bir şeyler yaz…">
+    <button type="submit">Gönder</button>
+  </form>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
+<script src="chat.js"></script>
 
 <script>
 /* =============== DATA (videos.json ile haftalık otomatik güncellenir) =============== */
