@@ -43,34 +43,6 @@ function censor(text){
   }).join('');
 }
 
-/* ---------------- Clash Royale temalı hazır avatarlar ---------------- */
-/* Not: gerçek kart görselleri Supercell'e ait olduğu için kullanılmıyor,
-   bunun yerine oyunu çağrıştıran emoji + renk kombinasyonları kullanılıyor. */
-const AVATARS = [
-  {e:'👑', c:['#ffe89a','#ffc93c']}, {e:'⚔️', c:['#ff8080','#c40000']},
-  {e:'🛡️', c:['#7fd6ff','#3fb6ff']}, {e:'🔥', c:['#ffb37a','#ff5a3c']},
-  {e:'🐉', c:['#8be08b','#3ddc84']}, {e:'💀', c:['#d9d9e6','#8888a0']},
-  {e:'🏹', c:['#c9a3ff','#8b4dff']}, {e:'🧙', c:['#9adfff','#3fb6ff']},
-  {e:'⚡', c:['#fff2a0','#ffc93c']}, {e:'🗡️', c:['#ffb0d9','#ff4fa3']},
-  {e:'🏰', c:['#c8b8ff','#6f3fd6']}, {e:'💣', c:['#9a9aa8','#3a3a46']},
-  {e:'🪓', c:['#ffb37a','#c9660a']}, {e:'🦇', c:['#b39dff','#5b21b6']},
-  {e:'🧟', c:['#a8e6a1','#3ddc84']}, {e:'👹', c:['#ff9a9a','#ff4141']},
-  {e:'🐗', c:['#e0b58a','#a5652c']}, {e:'🎈', c:['#ff9ad1','#ff4fa3']},
-  {e:'🧊', c:['#b9f0ff','#3fb6ff']}, {e:'🔱', c:['#8ee8ff','#0b62a8']},
-  {e:'💎', c:['#c6e8ff','#3fb6ff']}, {e:'🎯', c:['#ffd0d0','#ff5a5a']},
-  {e:'🐸', c:['#b7f0a8','#3ddc84']}, {e:'🦴', c:['#eeeef2','#aaaab8']},
-  {e:'🌪️', c:['#cfd8ff','#8b4dff']}, {e:'🎪', c:['#ffd6a0','#ff9a3c']},
-  {e:'👻', c:['#e6e6ff','#b0a8ff']}, {e:'🃏', c:['#ffe0a0','#ffc93c']}
-];
-function avatarStyle(idx){
-  const a = AVATARS[idx] || AVATARS[0];
-  return `background:linear-gradient(180deg,${a.c[0]},${a.c[1]})`;
-}
-function avatarEmoji(idx){
-  const a = AVATARS[idx] || AVATARS[0];
-  return a.e;
-}
-
 /* ---------------- Firebase kurulu mu? ---------------- */
 const fbReady = !!(FIREBASE_CONFIG && FIREBASE_CONFIG.apiKey && FIREBASE_CONFIG.databaseURL);
 
@@ -86,8 +58,6 @@ const chatFab = document.getElementById('chatFab');
 const chatPanel = document.getElementById('chatPanel');
 const chatClose = document.getElementById('chatClose');
 const chatBadge = document.getElementById('chatBadge');
-const chatEditMe = document.getElementById('chatEditMe');
-const avatarGrid = document.getElementById('avatarGrid');
 
 /* panel açma/kapama her zaman çalışsın (Firebase kurulu olmasa bile) */
 let panelOpenAlways = false;
@@ -116,38 +86,15 @@ if(!fbReady){
   const auth = firebase.auth();
   const db = firebase.database();
   let uid = null, myName = localStorage.getItem('hcr_chat_name') || '';
-  let myAvatar = parseInt(localStorage.getItem('hcr_chat_avatar'), 10);
-  if(isNaN(myAvatar) || myAvatar < 0 || myAvatar >= AVATARS.length) myAvatar = null;
-  let pickedAvatar = myAvatar;
   let lastSent = 0;
 
   function esc(s){ const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
   function fmtTime(ts){ const d=new Date(ts); return d.toLocaleTimeString('tr-TR',{hour:'2-digit',minute:'2-digit'}); }
 
-  /* avatar seçim ızgarasını çiz */
-  AVATARS.forEach((a, i)=>{
-    const b = document.createElement('div');
-    b.className = 'avatar-opt';
-    b.style.cssText = avatarStyle(i);
-    b.textContent = a.e;
-    b.title = 'Bu avatarı seç';
-    b.addEventListener('click', ()=>{
-      pickedAvatar = i;
-      avatarGrid.querySelectorAll('.avatar-opt').forEach(el=>el.classList.remove('sel'));
-      b.classList.add('sel');
-    });
-    avatarGrid.appendChild(b);
-  });
-  function markSelectedAvatar(idx){
-    avatarGrid.querySelectorAll('.avatar-opt').forEach((el,i)=>el.classList.toggle('sel', i===idx));
-  }
-
   function appendMsg(m){
     const row = document.createElement('div');
     row.className = 'chat-msg';
-    const ai = (typeof m.avatar === 'number' && AVATARS[m.avatar]) ? m.avatar : 0;
-    row.innerHTML = `<span class="ava" style="${avatarStyle(ai)}">${avatarEmoji(ai)}</span>`+
-      `<span class="body"><span class="n">${esc(m.name||'???')}</span><span class="t">${esc(m.text||'')}</span><span class="ts">${fmtTime(m.ts||Date.now())}</span></span>`;
+    row.innerHTML = `<span class="n">${esc(m.name||'???')}</span><span class="t">${esc(m.text||'')}</span><span class="ts">${fmtTime(m.ts||Date.now())}</span>`;
     chatLog.appendChild(row);
     chatLog.scrollTop = chatLog.scrollHeight;
     if(!panelOpenAlways){
@@ -158,40 +105,21 @@ if(!fbReady){
   }
 
   function initNameUI(){
-    if(myName && myAvatar !== null){
+    if(myName){
       chatNameBar.style.display = 'none';
       chatForm.style.display = 'flex';
-      chatEditMe.style.display = 'inline';
     } else {
       chatNameBar.style.display = 'flex';
       chatForm.style.display = 'none';
-      chatEditMe.style.display = 'none';
-      chatNameInput.value = myName || '';
-      pickedAvatar = myAvatar !== null ? myAvatar : Math.floor(Math.random()*AVATARS.length);
-      markSelectedAvatar(pickedAvatar);
     }
   }
   initNameUI();
 
-  chatEditMe.addEventListener('click', ()=>{
-    chatNameBar.style.display = 'flex';
-    chatForm.style.display = 'none';
-    chatNameInput.value = myName || '';
-    pickedAvatar = myAvatar !== null ? myAvatar : 0;
-    markSelectedAvatar(pickedAvatar);
-    chatNameInput.focus();
-  });
-
   chatNameSave.addEventListener('click', ()=>{
     const v = (chatNameInput.value || '').trim().slice(0,18);
-    if(!v){ chatNameInput.focus(); return; }
-    if(pickedAvatar === null || pickedAvatar === undefined){
-      pickedAvatar = Math.floor(Math.random()*AVATARS.length);
-    }
+    if(!v) return;
     myName = censor(v);
-    myAvatar = pickedAvatar;
     localStorage.setItem('hcr_chat_name', myName);
-    localStorage.setItem('hcr_chat_avatar', String(myAvatar));
     initNameUI();
   });
   chatNameInput.addEventListener('keydown', e=>{ if(e.key==='Enter') chatNameSave.click(); });
@@ -237,7 +165,7 @@ if(!fbReady){
     lastSent = now;
     const text = censor(raw).slice(0,220);
     db.ref('chat').push({
-      uid, name: myName || 'Anonim', avatar: myAvatar !== null ? myAvatar : 0,
+      uid, name: myName || 'Anonim',
       text, ts: firebase.database.ServerValue.TIMESTAMP
     });
     chatInput.value = '';
